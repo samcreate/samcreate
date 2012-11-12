@@ -1,0 +1,186 @@
+/*
+Global
+*/
+.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.hidden { display: none; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+a{color:black;}
+
+
+
+/*
+Body
+*/
+body{background:#ffffff; }
+
+/*
+PageWrapper
+*/
+div#PageWrapper{}
+div#PageWrapper ul.mainMenu{text-align:left; width:975px; height:52px; background:black;  color:#FFFFFF;font-family: Georgia, Utopia, 'Times New Roman', serif; font-size:14px; font-weight:normal; padding-top: 13px; margin: 0 auto 27px;}
+div#PageWrapper ul.mainMenu li{height: 30px;line-height: 16px;vertical-align: top;text-align:center;width:78px;display: inline-block;margin-right:9px;margin-top:-4px;border-right: 1px dotted #666;padding-right: 8px;padding-top: 13px;/* For IE 7 */zoom: 1;*display: inline;}
+div#PageWrapper ul.mainMenu li.selected{background:url('/media/images/arrow.png') no-repeat 49% top;}
+div#PageWrapper ul.mainMenu li:last-child{border:none; }
+div#PageWrapper ul.mainMenu li a{margin-bottom: 1px; display:block; color:white; text-decoration:none; font-family: Georgia, Utopia, 'Times New Roman', serif; font-size:14px; font-weight:normal; }
+div#PageWrapper ul.mainMenu li p{color:#989898; font-family: Georgia, 'Times New Roman', serif;font-size: 10px;font-style: italic; font-weight: normal;letter-spacing: 1px; line-height: 16px;}
+div#PageWrapper h1.logo{background-image:url('/media/images/logo.png'); width:235px; height:180px; z-index:0;  margin-bottom: 27px;}
+div#PageWrapper canvas{width:100%; height:100%; position:fixed; top:0px; left:0px;z-index:0;}
+div#PageWrapper #canvas_top{z-index:-1; opacity:0.8;}
+div#PageWrapper #canvas_bottom{z-index:-2;}
+div#PageWrapper #canvas_temp{z-index:0;}
+
+
+/*
+Header
+*/
+header{  width: 975px; margin:0 -488px 0 auto; position: fixed;left: 50%; right:50%; top: 27px; z-index: 1;}
+div#PageWrapper ul.animatedLogo {background: no-repeat scroll 874px 10px black;}
+
+/*
+Content MainContent
+*/
+div#MainContent{ z-index:3;width:100%;  height:100%; margin-top: 234px; position: relative;}
+div#MainContent #mContainer{padding: 42px;width: 891px; line-height: 29px; background-color: white; min-height: 1200px; margin: 0px auto; opacity: 0.9;margin-bottom:20px;}
+div#MainContent #mContainer hgroup{width:inherit;background:url('/media/images/pagehead.icon.png') no-repeat 50% bottom; height:119px;}
+div#MainContent #mContainer hgroup h2{width:inherit; height:36px; background:white; border:1px dotted black; text-align:center; vertical-align:middle; display : table-cell; font-family:Georgia, Utopia, 'Times New Roman', serif; font-size:26px; line-height:30px;font-variant: small-caps;font-weight: normal;letter-spacing: 4px;}
+div#MainContent #mContainer hgroup h3{font-family:'Palatino Linotype', Palatino, 'Book Antiqua', 'Times New Roman';font-size: 10px; font-style: normal;letter-spacing: 2px;line-height: 16px;text-transform: uppercase;width:inherit; text-align:center; padding-top:3px;}
+
+div#MainContent #mContainer ul#blog{margin-top:4px;}
+
+div#MainContent #mContainer li.post{
+  background:white; border:1px dotted black;
+  margin-bottom:78px;
+
+}
+div#MainContent #mContainer li.post time{display: block;width: 150px;height: 150px; background:url('/media/images/date.bg.png') no-repeat; position:absolute;right: -44px; top: -37px; }
+div#MainContent #mContainer li.post time span.month{font-family: 'Palatino Linotype', Palatino, 'Book Antiqua';font-size: 10px;font-style: normal;letter-spacing: 1px;line-height: 16px; position:absolute;top:39px;left:41%;}
+div#MainContent #mContainer li.post time span.day{font-family: Georgia, Utopia, 'Times New Roman', serif; font-size: 55px;position:absolute; text-align:center;top:47px;left:21px; width:100px;}
+div#MainContent #mContainer li.post h2 { letter-spacing: 1px; font-size: 49px; font-family: Georgia, Utopia, 'Times New Roman', serif; font-size: 48px; position:relative; top:32px; left:36px; width:76%;}
+div#MainContent #mContainer li.post h2 span{color:#d4d4d4;}
+div#MainContent #mContainer li.post div.p_holder {text-align: justify;line-height: 22px;font-family: Georgia, Utopia, 'Times New Roman', serif;font-size: 14px; width:87%; margin:57px auto 42px; border-top:1px solid #d4d4d4;  border-bottom:1px solid #d4d4d4; padding-top:15px; padding-bottom:21px;}
+div#MainContent #mContainer li.post div.p_holder ol{list-style-type: decimal; padding-left: 40px;margin-bottom: 10px;}
+div#MainContent #mContainer li.post div.p_holder ol li{list-style-type: decimal;display: list-item;}
+div#MainContent #mContainer li.post div.p_holder ul{list-style-type: disc;padding-left: 40px;margin-bottom: 10px;}
+div#MainContent #mContainer li.post div.p_holder ul li{list-style-type: disc;display: list-item;}
+div#MainContent #mContainer li.post div.p_holder strong{/*background:#f26848; color:white; */padding:2px; font-weight:bold;}
+div#MainContent #mContainer li.post div.p_holder blockquote{border-left:  dotted 4px gainsboro; display:block; margin-left:32px; padding-left:16px;}
+div#MainContent #mContainer li.post div.p_holder em{font-style:italic;}
+div#MainContent #mContainer li.post div.p_holder a{background:#000; color:white; padding: 1px 10px;text-decoration: none;}
+div#MainContent #mContainer li.post div.p_holder a:hover{background:#f26848;}
+div#MainContent #mContainer li.post div.p_holder a:visited{background:#d4d4d4;}
+div#MainContent #mContainer li.post div.p_holder p{padding:16px 0;}
+div#MainContent #mContainer li.post div.p_holder img{float: right; clear: right; margin:0px 0px 17px 33px;}
+div#MainContent #mContainer li.photo div.p_holder img{float:none; margin:0px auto;}
+div#MainContent #mContainer li.quote div.p_holder big {color: rgba(0, 0, 0, 0.2);display: inline;font-family: "American Typewriter",Georgia,serif;font-size: 10em;line-height: 31px;position: absolute;top: 108px;}
+div#MainContent #mContainer li.quote div.p_holder blockquote{display: block;font-size: 1.3em;font-style: normal;font-variant: normal;font-weight: bold;height: 46px; padding-left: 18px;text-align: left;width: 76%; margin-left: 62px;height: 100%;line-height: 31px;clear:both; width: 75%;}
+
+
+
+div#MainContent #mContainer li.post span.end{display:block; width:25px; height:7px; background:url('/media/images/end.png') no-repeat; text-indent:-9999px; top:-19px; left:49%;position:relative; clear:both;}
+.circle{display: block;
+}
+
+
+div#MainContent #mContainer #pageNav li {
+  display:inline; 
+}
+div#MainContent #mContainer #pageNav {padding:0;margin:-58px 0 0; float:right;}
+div#MainContent #mContainer #pageNav li.active a{background:#f26848;border:1px solid white;}
+div#MainContent #mContainer #pageNav li.active a:hover{ background:#f26848;border:1px solid white; }
+div#MainContent #mContainer #pageNav li a{ border-radius:16px; border:1px solid black; font-size:10px;  font-family: myHelveticaNeue,Arial,Helvetica,sans-serif; text-transform: uppercase;font-weight:bold; color:white; text-decoration:none; text-align:center; padding:5px 9px;  background:black; width:5px; height:5px;}
+div#MainContent #mContainer #pageNav li a:hover{background:#f26848;border:1px solid white;}
+/*
+Footer
+*/
+footer{}
+
+
+
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
+
+/*
+For Printing support
+*/
+@media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important;
+  -ms-filter: none !important; } 
+  a, a:visited { color: #444 !important; text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; }
+  tr, img { page-break-inside: avoid; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3{ page-break-after: avoid; }
+}
