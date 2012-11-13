@@ -38,7 +38,17 @@ sam.homePage = function(){
 	// ================================================
 	
 	function _run(){
-		
+
+
+
+		$('.videoHolder').each(function(index, value) {
+				if($(this).find('video').size() > 0) {
+					debug.log("HERE")
+					_V_($(this).find('video').attr('id'));
+				}
+			});
+
+
 		if(sam.bgController.canvasOkay()){
 			
 			sam.spirals.init(sam.bgController.animationLayer());
@@ -48,7 +58,7 @@ sam.homePage = function(){
 		}
 
 		var _controller = $.superscrollorama();
-		var scrollDuration = 504;
+		var scrollDuration = 450;
 		var _$menuClone = $('#mainMenu').clone().attr('id','#mainMenu2');
 		$("#PageWrapper").prepend(_$menuClone);
 		_$menuClone.css({position:"fixed",right:"50%",margin:"0 -488px 0 auto","z-index":4,top:"-65px"});
@@ -58,7 +68,7 @@ sam.homePage = function(){
 	  '#MainContent',
 	  (new TimelineLite())
 	    .append(
-	      [TweenMax.fromTo($('#mainMenu'), 1, 
+	      [TweenMax.fromTo($('#mainMenu'), 0.5, 
 	        {css:{opacity: 1}, immediateRender:true}, 
 	        {css:{opacity: 1}}),
 	      TweenMax.fromTo($('.logo'), 1, 

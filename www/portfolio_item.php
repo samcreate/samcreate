@@ -1,7 +1,7 @@
 <?php
 	require_once 'lib/php/Config.php';
 	$settings = Config::getInstance();
-	$settings->setPage("HomePage");
+	$settings->setPage("Portfolio / Item");
 
 ?>
 <!doctype html>
@@ -36,7 +36,7 @@
 					<p>My work</p>
 				</li>
 				<li class="menu portfolio ">
-					<a href="">Tinkering</a>
+					<a href="https://github.com/samcreate/" target="_blank">Tinkering</a>
 					<p>Experiments</p>
 				</li>
 				<li class="menu about">
@@ -51,15 +51,15 @@
 			</ul>
 			<div id="mContainer">
 				<div class="holder">
+					
 					<img src="media/images/portfolio/large/evb_site_header_0002_altoids.jpg" width="975" height="370" alt="Evb Site Header 0002 Altoids">
 					<h2 class="title"><span>{</span> Altoids - Curiously Strong Awards <span>}</span></h2>
 					<div class="description">
 						<p>The music video, “The Stars on Facebook,” was the anthem for the Curiously Strong Awards. It introduced all the Curiously Strong characters and gave the campaign a viral kick-start. There were twelve different awards, each based on an archetypal Facebook character. The characters were people we all know from our Facebook feeds, from the girl who “likes” everything to the guy who posts every detail of his life.</p>
 						<p>Altoids was known for smart, irreverent campaigns that were supported by their famous tagline, "Curiously Strong." In 2011, they needed to prove that they could be as witty and relevant in the digital world as they had once been in traditional media. The Altoids Curiously Strong Awards gave people a way to celebrate the Curiously Strong characters of Facebook, and integrated Altoids into all of our social networks.</p>
-
 					</div>
 					<div class="videoHolder">
-						<video id="example_video_1" class="video-js vjs-tech" controls preload="none" width="975" height="548"
+						<video id="example_video_1" class="video-js vjs-tech " controls preload="none" width="975" height="548"
 						      poster="/media/images/portfolio/video/OrbitBleepingClean_videostills_hottub.jpg"
 						      data-setup="{}">
 						    <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
