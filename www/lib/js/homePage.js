@@ -61,7 +61,7 @@ sam.homePage = function(){
 		var scrollDuration = 450;
 		var _$menuClone = $('#mainMenu').clone().attr('id','#mainMenu2');
 		$("#PageWrapper").prepend(_$menuClone);
-		_$menuClone.css({position:"fixed",right:"50%",margin:"0 -488px 0 auto","z-index":4,top:"-65px"});
+		_$menuClone.css({position:"fixed",right:"50%",margin:"0 -487px 0 auto","z-index":4,top:"-65px"});
 		
 		debug.log("this is called");
 		_controller.addTween(
@@ -73,7 +73,7 @@ sam.homePage = function(){
 	        {css:{opacity: 1}}),
 	      TweenMax.fromTo($('.logo'), 1, 
 	        {css:{opacity: 1}, immediateRender:true}, 
-	        {css:{opacity: 0},onComplete:function(){
+	        {css:{opacity: 1},onComplete:function(){
 	        	_$menuClone.addClass('animatedLogo').css({backgroundImage:"none"});
 		        	var img = document.createElement('img');
 			        img.src = "media/images/logo2.gif?p" + new Date().getTime();
