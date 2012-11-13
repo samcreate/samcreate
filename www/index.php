@@ -28,11 +28,11 @@
 		<div id="MainContent" role="main">
 			<ul class="mainMenu" id="mainMenu">
 				<li class="menu home selected">
-					<a href="">Home</a>
+					<a href="/">Home</a>
 					<p>My Blog</p>
 				</li>
 				<li class="menu portfolio">
-					<a href="">Portfolio</a>
+					<a href="/portfolio.php">Portfolio</a>
 					<p>My work</p>
 				</li>
 				<li class="menu portfolio ">

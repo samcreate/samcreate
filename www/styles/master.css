@@ -1,4 +1,5 @@
 /* master.css */
 @import url(reset.css) screen;
 @import url(layout.css) screen;
+@import url(video-js.min.css) screen;
 @import url(typography.css) screen;

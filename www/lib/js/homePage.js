@@ -53,7 +53,7 @@ sam.homePage = function(){
 		$("#PageWrapper").prepend(_$menuClone);
 		_$menuClone.css({position:"fixed",right:"50%",margin:"0 -488px 0 auto","z-index":4,top:"-65px"});
 		
-
+		debug.log("this is called");
 		_controller.addTween(
 	  '#MainContent',
 	  (new TimelineLite())

@@ -47,39 +47,112 @@ div#PageWrapper ul.animatedLogo {background: no-repeat scroll 874px 10px black;}
 Content MainContent
 */
 div#MainContent{ z-index:3;width:100%;  height:100%; margin-top: 234px; position: relative;}
-div#MainContent #mContainer{padding: 42px;width: 891px; line-height: 29px; background-color: white; min-height: 1200px; margin: 0px auto; opacity: 0.9;margin-bottom:20px;}
-div#MainContent #mContainer hgroup{width:inherit;background:url('/media/images/pagehead.icon.png') no-repeat 50% bottom; height:119px;}
-div#MainContent #mContainer hgroup h2{width:inherit; height:36px; background:white; border:1px dotted black; text-align:center; vertical-align:middle; display : table-cell; font-family:Georgia, Utopia, 'Times New Roman', serif; font-size:26px; line-height:30px;font-variant: small-caps;font-weight: normal;letter-spacing: 4px;}
-div#MainContent #mContainer hgroup h3{font-family:'Palatino Linotype', Palatino, 'Book Antiqua', 'Times New Roman';font-size: 10px; font-style: normal;letter-spacing: 2px;line-height: 16px;text-transform: uppercase;width:inherit; text-align:center; padding-top:3px;}
+div#MainContent #mContainer{padding: 42px;width: 891px; line-height: 29px; background: rgba(0, 0, 0, 0.5); min-height: 1200px; margin: 0px auto; margin-bottom:20px; }
 
-div#MainContent #mContainer ul#blog{margin-top:4px;}
+/*portfolio*/
+body.portfolio div#MainContent #mContainer{min-height: 800px;}
+body.portfolio div#MainContent #mContainer ul {position: relative;top: 4px;left: -22px;width: 936px;display: block;margin-bottom: -44px; overflow: hidden;}
+body.portfolio div#MainContent #mContainer ul li {float:left; padding: 0px 26px 42px;}
+
+/*portfolio item */
+body.portfolio.item div.holder{position: relative;top: -42px;left: -42px; overflow: hidden; width: 975px;}
+body.portfolio.item div.holder div.description{ background-color: white; padding: 16px 71px 16px 42px; text-align: justify;}
+body.portfolio.item div.holder div.description p{  line-height: 34px; background: url('/media/images/p.bottom.gif' )no-repeat 0 bottom;  margin-bottom: 38px;padding-bottom: 38px;}
+body.portfolio.item div.holder div.description p:last-child{background:none; padding-bottom: 0;}
+body.portfolio.item div.holder h2.title { letter-spacing: 1px; font-size: 49px; font-family: Georgia, Utopia, 'Times New Roman', serif; font-size: 39px; background-color: white; padding: 48px 0 23px 18px;}
+body.portfolio.item div.holder h2.title span{color:#d4d4d4;}
+body.portfolio.item div.holder img {margin:0 0 -11px; padding: 0;}
+
+.play_video { left: 425px; position: absolute; top: 147px; }
+.play_video,
+.vjs-big-play-button { background: black; color: white; font-size: 100%; font-weight: 600; margin-top: -6%; padding: 20px 28px; text-transform: uppercase; top: 50%; word-spacing: 1px; z-index: 2; }
+.work_detail .arrow,
+.vjs-big-play-button span {  border-bottom: 6px solid transparent; border-top: 6px solid transparent; border-left: 6px solid #f26a3e; display: inline-block; font-size: 0px; height: 0px; line-height: 0px; margin-left: 10px; position: relative; top: 1px; width: 0px; } 
+
+/* VIDEO JS */
+body .video-js,
+body video,
+body .video-js .vjs-tech  { font-size: 13px; height: auto !important; line-height: 0; min-height: 544px; width: 100% !important; }
+.ie7 .video-js .vjs-tech,
+.ie8 .video-js .vjs-tech { height: 545px !important; }
+body video,
+body .video-js .vjs-tech  { position: static !important; }
+body .vjs-poster { height: 100%; left: 0; position: absolute; width: 100% !important; top: 0; }
+.ie7 body .vjs-poster { height: auto; width: 975px !important; }
+body .vjs-big-play-button { letter-spacing: 1px; cursor: pointer; left: 50%; line-height: 100%; margin-left: -66px; margin-top: -4%; position: absolute; top: 50%; }
+body .vjs-controls { line-height: 100%; opacity: 0; position: absolute; width: 100%; } 
+body .vjs-fade-out {
+-webkit-transition: visibility 0s linear .3s,opacity .3s linear;
+   -moz-transition: visibility 0s linear .3s,opacity .3s linear;
+    -ms-transition: visibility 0s linear .3s,opacity .3s linear;
+     -o-transition: visibility 0s linear .3s,opacity .3s linear;
+        transition: visibility 0s linear .3s,opacity .3s linear; }
+.ie7 body .vjs-controls,
+.ie8 body .vjs-controls { display: none; }
+.ie7 body .video:hover .vjs-controls,
+.ie8 body .video:hover .vjs-controls { display: block; }
+body .vjs-control { background: black; bottom: 0; padding: 30px; position: absolute; }
+body .vjs-play-control { cursor: pointer; left: 0; padding-bottom: 27px; padding-top: 27px; }
+body .vjs-play-control div { background: transparent url(/media/images/sprite_video_controls.gif) no-repeat -23px 0; display: block; height: 19px; overflow: hidden; text-indent: 100%; white-space: nowrap; width: 14px; }
+body .vjs-play-control:hover div { background-position: 0 0; }
+body .vjs-current-time { left: 76px; padding-right: 12px; }
+body .vjs-progress-control { left: 140px; padding-bottom: 35px; padding-left: 0; padding-right: 0; padding-top: 35px; right: 17em; }
+body .vjs-controls .vjs-playing div { background-position: -23px -25px; }
+body .vjs-controls .vjs-playing:hover div { background-position: 0 -25px; }
+body .vjs-duration { right: 150px; }
+body .vjs-progress-holder { background: #a1a1a1; height: 3px; overflow: hidden; position: relative; text-indent: 100%; white-space: nowrap; }
+body .vjs-progress-holder div { height: 3px; left: 0; position: absolute; top: 0; }
+body .vjs-load-progress { background: white; }
+body .vjs-play-progress { background: #f36b3e; }
+body .vjs-seek-handle { width: 3px; }
+body .vjs-mute-control { background: black url(/media/images/sprite_video_controls.gif) no-repeat 30px -80px; cursor: pointer; height: 20px; overflow: hidden; padding-bottom: 28px; padding-top: 25px; right: 0; text-indent: -9999px; white-space: nowrap; width: 12px; }
+body .vjs-mute-control:hover { background-position: -22px -80px; }
+body .vjs-vol-0 { background-position: 30px -139px !important; }
+body .vjs-fullscreen-control { cursor: pointer; padding-bottom: 28px; padding-top: 29px; right: 73px; }
+body .vjs-fullscreen-control div { background: white url(/media/images/sprite_video_controls.gif) no-repeat 0 -52px; height: 16px;  overflow: hidden; text-indent: 100%; white-space: nowrap; width: 16px; }
+body .vjs-fullscreen-control:hover div { background-position: -25px -52px; }
+body .vjs-volume-bar { background: #a1a1a1; bottom: 74px; height: 10px; position: absolute; right: 0; width: 115px; }
+body .vjs-volume-handle { background: #b13840; height: 10px; position: absolute; top: 0; width: 2px; }
+body .vjs-volume-level { background: #C6C6C6; height: 10px; width: 10px; }
+body .vjs-time-divider,
+body .vjs-remaining-time,
+body .vjs-volume-control { display: none; }
+body .vjs-duration { float: right; }
+/*blog*/
+body.blog div#MainContent #mContainer hgroup{width:inherit;background:url('/media/images/pagehead.icon.png') no-repeat 50% bottom; height:119px;}
+body.blog div#MainContent #mContainer hgroup h2{width:inherit; height:36px; background:white; border:1px dotted black; text-align:center; vertical-align:middle; display : table-cell; font-family:Georgia, Utopia, 'Times New Roman', serif; font-size:26px; line-height:30px;font-variant: small-caps;font-weight: normal;letter-spacing: 4px;}
+body.blog div#MainContent #mContainer hgroup h3{font-family:'Palatino Linotype', Palatino, 'Book Antiqua', 'Times New Roman';font-size: 10px; font-style: normal;letter-spacing: 2px;line-height: 16px;text-transform: uppercase;width:inherit; text-align:center; padding-top:3px;}
+
+
+body.blog div#MainContent #mContainer ul#blog{margin-top:4px;}
 
 div#MainContent #mContainer li.post{
   background:white; border:1px dotted black;
   margin-bottom:78px;
 
 }
-div#MainContent #mContainer li.post time{display: block;width: 150px;height: 150px; background:url('/media/images/date.bg.png') no-repeat; position:absolute;right: -44px; top: -37px; }
-div#MainContent #mContainer li.post time span.month{font-family: 'Palatino Linotype', Palatino, 'Book Antiqua';font-size: 10px;font-style: normal;letter-spacing: 1px;line-height: 16px; position:absolute;top:39px;left:41%;}
-div#MainContent #mContainer li.post time span.day{font-family: Georgia, Utopia, 'Times New Roman', serif; font-size: 55px;position:absolute; text-align:center;top:47px;left:21px; width:100px;}
-div#MainContent #mContainer li.post h2 { letter-spacing: 1px; font-size: 49px; font-family: Georgia, Utopia, 'Times New Roman', serif; font-size: 48px; position:relative; top:32px; left:36px; width:76%;}
-div#MainContent #mContainer li.post h2 span{color:#d4d4d4;}
-div#MainContent #mContainer li.post div.p_holder {text-align: justify;line-height: 22px;font-family: Georgia, Utopia, 'Times New Roman', serif;font-size: 14px; width:87%; margin:57px auto 42px; border-top:1px solid #d4d4d4;  border-bottom:1px solid #d4d4d4; padding-top:15px; padding-bottom:21px;}
-div#MainContent #mContainer li.post div.p_holder ol{list-style-type: decimal; padding-left: 40px;margin-bottom: 10px;}
-div#MainContent #mContainer li.post div.p_holder ol li{list-style-type: decimal;display: list-item;}
-div#MainContent #mContainer li.post div.p_holder ul{list-style-type: disc;padding-left: 40px;margin-bottom: 10px;}
-div#MainContent #mContainer li.post div.p_holder ul li{list-style-type: disc;display: list-item;}
-div#MainContent #mContainer li.post div.p_holder strong{/*background:#f26848; color:white; */padding:2px; font-weight:bold;}
-div#MainContent #mContainer li.post div.p_holder blockquote{border-left:  dotted 4px gainsboro; display:block; margin-left:32px; padding-left:16px;}
-div#MainContent #mContainer li.post div.p_holder em{font-style:italic;}
-div#MainContent #mContainer li.post div.p_holder a{background:#000; color:white; padding: 1px 10px;text-decoration: none;}
-div#MainContent #mContainer li.post div.p_holder a:hover{background:#f26848;}
-div#MainContent #mContainer li.post div.p_holder a:visited{background:#d4d4d4;}
-div#MainContent #mContainer li.post div.p_holder p{padding:16px 0;}
-div#MainContent #mContainer li.post div.p_holder img{float: right; clear: right; margin:0px 0px 17px 33px;}
-div#MainContent #mContainer li.photo div.p_holder img{float:none; margin:0px auto;}
-div#MainContent #mContainer li.quote div.p_holder big {color: rgba(0, 0, 0, 0.2);display: inline;font-family: "American Typewriter",Georgia,serif;font-size: 10em;line-height: 31px;position: absolute;top: 108px;}
-div#MainContent #mContainer li.quote div.p_holder blockquote{display: block;font-size: 1.3em;font-style: normal;font-variant: normal;font-weight: bold;height: 46px; padding-left: 18px;text-align: left;width: 76%; margin-left: 62px;height: 100%;line-height: 31px;clear:both; width: 75%;}
+
+body.blog div#MainContent #mContainer li.post time{display: block;width: 150px;height: 150px; background:url('/media/images/date.bg.png') no-repeat; position:absolute;right: -44px; top: -37px; }
+body.blog div#MainContent #mContainer li.post time span.month{font-family: 'Palatino Linotype', Palatino, 'Book Antiqua';font-size: 10px;font-style: normal;letter-spacing: 1px;line-height: 16px; position:absolute;top:39px;left:41%;}
+body.blog div#MainContent #mContainer li.post time span.day{font-family: Georgia, Utopia, 'Times New Roman', serif; font-size: 55px;position:absolute; text-align:center;top:47px;left:21px; width:100px;}
+body.blog div#MainContent #mContainer li.post h2 { letter-spacing: 1px; font-size: 49px; font-family: Georgia, Utopia, 'Times New Roman', serif; font-size: 48px; position:relative; top:32px; left:36px; width:76%;}
+body.blog div#MainContent #mContainer li.post h2 span{color:#d4d4d4;}
+body.blog div#MainContent #mContainer li.post div.p_holder {text-align: justify;line-height: 22px;font-family: Georgia, Utopia, 'Times New Roman', serif;font-size: 14px; width:87%; margin:57px auto 42px; border-top:1px solid #d4d4d4;  border-bottom:1px solid #d4d4d4; padding-top:15px; padding-bottom:21px;}
+body.blog div#MainContent #mContainer li.post div.p_holder ol{list-style-type: decimal; padding-left: 40px;margin-bottom: 10px;}
+body.blog div#MainContent #mContainer li.post div.p_holder ol li{list-style-type: decimal;display: list-item;}
+body.blog div#MainContent #mContainer li.post div.p_holder ul{list-style-type: disc;padding-left: 40px;margin-bottom: 10px;}
+body.blog div#MainContent #mContainer li.post div.p_holder ul li{list-style-type: disc;display: list-item;}
+body.blog div#MainContent #mContainer li.post div.p_holder strong{/*background:#f26848; color:white; */padding:2px; font-weight:bold;}
+body.blog div#MainContent #mContainer li.post div.p_holder blockquote{border-left:  dotted 4px gainsboro; display:block; margin-left:32px; padding-left:16px;}
+body.blog div#MainContent #mContainer li.post div.p_holder em{font-style:italic;}
+body.blog div#MainContent #mContainer li.post div.p_holder a{background:#000; color:white; padding: 1px 10px;text-decoration: none;}
+body.blog div#MainContent #mContainer li.post div.p_holder a:hover{background:#f26848;}
+body.blog div#MainContent #mContainer li.post div.p_holder a:visited{background:#d4d4d4;}
+body.blog div#MainContent #mContainer li.post div.p_holder p{padding:16px 0;}
+body.blog div#MainContent #mContainer li.post div.p_holder img{float: right; clear: right; margin:0px 0px 17px 33px;}
+body.blog div#MainContent #mContainer li.photo div.p_holder img{float:none; margin:0px auto;}
+body.blog div#MainContent #mContainer li.quote div.p_holder big {color: rgba(0, 0, 0, 0.2);display: inline;font-family: "American Typewriter",Georgia,serif;font-size: 10em;line-height: 31px;position: absolute;top: 108px;}
+body.blog div#MainContent #mContainer li.quote div.p_holder blockquote{display: block;font-size: 1.3em;font-style: normal;font-variant: normal;font-weight: bold;height: 46px; padding-left: 18px;text-align: left;width: 76%; margin-left: 62px;height: 100%;line-height: 31px;clear:both; width: 75%;}
 
 
 

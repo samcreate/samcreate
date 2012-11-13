@@ -23,6 +23,9 @@ sam.main = function(){
 				debug.log('- initialized');
 				
 				$('html').removeClass('no-js');
+
+				_V_.options.flash.swf = "/media/swf/video-js.swf";
+
 				debug.groupEnd();
 				
 				self.appVARS(window._app_vars);
