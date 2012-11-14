@@ -1,7 +1,7 @@
 <?php
 	require_once 'lib/php/Config.php';
 	$settings = Config::getInstance();
-	$settings->setPage("HomePage");
+	$settings->setPage("Portfolio");
 
 ?>
 <!doctype html>
@@ -50,7 +50,7 @@
 			
 			</ul>
 			<div id="mContainer">
-				<ul>
+				<ul class="thumbs">
 					<li>
 						<a href="/portfolio_item.php">
 							<h3>Bleeping Clean</h3>
@@ -144,6 +144,7 @@
 	<!-- BEGIN <?php echo $settings->environment ?>: javascript -->
 	<script src="lib/js/jquery/jquery-1.8.0.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="lib/js/jquery/jquery.superscrollorama.js" type="text/javascript" charset="utf-8"></script>
+	<script src="lib/js/plugins/jquery.flexslider.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript" src="lib/js/plugins/greensock/TweenMax.min.js"></script>
 	<script src="lib/js/plugins/video.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="lib/js/master.js" type="text/javascript" charset="utf-8"></script>	

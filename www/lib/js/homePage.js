@@ -19,17 +19,17 @@ sam.homePage = function(){
 	
 				debug.group("# [homePage.js]");
 				
-				debug.log('- initialized'); 
+				debug.log('- initialized');
 				
 				//--> sof private functions
 					_run();
 				//--> eof private functions
-			    		
+
 				debug.groupEnd();
 
 		}
 		
-	}
+	};
 	
 	return self;
 	
@@ -42,12 +42,17 @@ sam.homePage = function(){
 
 
 		$('.videoHolder').each(function(index, value) {
-				if($(this).find('video').size() > 0) {
-					debug.log("HERE")
-					_V_($(this).find('video').attr('id'));
-				}
-			});
+			if($(this).find('video').size() > 0) {
+				var _id = $(this).find('video').attr('id');
+				_V_(_id);
+			}
+		});
 
+		$('.flexslider').flexslider({
+			animation: "slide",
+			itemWidth: 975,
+			slideshow: false
+		});
 
 		if(sam.bgController.canvasOkay()){
 			
@@ -62,8 +67,7 @@ sam.homePage = function(){
 		var _$menuClone = $('#mainMenu').clone().attr('id','#mainMenu2');
 		$("#PageWrapper").prepend(_$menuClone);
 		_$menuClone.css({position:"fixed",right:"50%",margin:"0 -487px 0 auto","z-index":4,top:"-65px"});
-		
-		debug.log("this is called");
+	
 		_controller.addTween(
 	  '#MainContent',
 	  (new TimelineLite())

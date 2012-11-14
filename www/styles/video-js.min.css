@@ -546,11 +546,11 @@ div.vjs-loading-spinner .ball1 {
 	top: 0;
 	width: 13px;
 	height: 13px;
-	background: #fff;
+	background: white;
 	border-radius: 13px;
 	-webkit-border-radius: 13px;
 	-moz-border-radius: 13px;
-	border: 1px solid #ccc
+	border: 1px solid black;
 }
 div.vjs-loading-spinner .ball2 {
 	opacity: .25;
@@ -559,11 +559,11 @@ div.vjs-loading-spinner .ball2 {
 	top: 6px;
 	width: 13px;
 	height: 13px;
-	background: #fff;
+	background: white;
 	border-radius: 13px;
 	-webkit-border-radius: 13px;
 	-moz-border-radius: 13px;
-	border: 1px solid #ccc
+	border: 1px solid black;
 }
 div.vjs-loading-spinner .ball3 {
 	opacity: .37;
@@ -572,11 +572,11 @@ div.vjs-loading-spinner .ball3 {
 	top: 20px;
 	width: 13px;
 	height: 13px;
-	background: #fff;
+	background: white;
 	border-radius: 13px;
 	-webkit-border-radius: 13px;
 	-moz-border-radius: 13px;
-	border: 1px solid #ccc
+	border: 1px solid black;
 }
 div.vjs-loading-spinner .ball4 {
 	opacity: .50;
@@ -585,11 +585,11 @@ div.vjs-loading-spinner .ball4 {
 	top: 34px;
 	width: 13px;
 	height: 13px;
-	background: #fff;
+	background: white;
 	border-radius: 10px;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 15px;
-	border: 1px solid #ccc
+	border: 1px solid black;
 }
 div.vjs-loading-spinner .ball5 {
 	opacity: .62;
@@ -598,11 +598,11 @@ div.vjs-loading-spinner .ball5 {
 	top: 40px;
 	width: 13px;
 	height: 13px;
-	background: #fff;
+	background: white;
 	border-radius: 13px;
 	-webkit-border-radius: 13px;
 	-moz-border-radius: 13px;
-	border: 1px solid #ccc
+	border: 1px solid black;
 }
 div.vjs-loading-spinner .ball6 {
 	opacity: .75;
@@ -611,11 +611,11 @@ div.vjs-loading-spinner .ball6 {
 	top: 34px;
 	width: 13px;
 	height: 13px;
-	background: #fff;
+	background: white;
 	border-radius: 13px;
 	-webkit-border-radius: 13px;
 	-moz-border-radius: 13px;
-	border: 1px solid #ccc
+	border: 1px solid black;
 }
 div.vjs-loading-spinner .ball7 {
 	opacity: .87;
@@ -624,11 +624,11 @@ div.vjs-loading-spinner .ball7 {
 	top: 20px;
 	width: 13px;
 	height: 13px;
-	background: #fff;
+	background: white;
 	border-radius: 13px;
 	-webkit-border-radius: 13px;
 	-moz-border-radius: 13px;
-	border: 1px solid #ccc
+	border: 1px solid black;
 }
 div.vjs-loading-spinner .ball8 {
 	opacity: 1.00;
@@ -637,11 +637,11 @@ div.vjs-loading-spinner .ball8 {
 	top: 6px;
 	width: 13px;
 	height: 13px;
-	background: #fff;
+	background: white;
 	border-radius: 13px;
 	-webkit-border-radius: 13px;
 	-moz-border-radius: 13px;
-	border: 1px solid #ccc
+	border: 1px solid black;
 }
 .vjs-default-skin .vjs-menu-button {
 	float: right;

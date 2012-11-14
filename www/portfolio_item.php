@@ -51,22 +51,49 @@
 			</ul>
 			<div id="mContainer">
 				<div class="holder">
-					
-					<img src="media/images/portfolio/large/evb_site_header_0002_altoids.jpg" width="975" height="370" alt="Evb Site Header 0002 Altoids">
-					<h2 class="title"><span>{</span> Altoids - Curiously Strong Awards <span>}</span></h2>
+					<img src="/media/images/portfolio/large/EVB_site_header_OrbitBleepingClean.jpg" width="975" height="370" alt="EVB Site Header OrbitBleepingClean">
+					<h2 class="title"><span>{</span> ORBIT - Bleeping Clean <span>}</span></h2>
 					<div class="description">
-						<p>The music video, “The Stars on Facebook,” was the anthem for the Curiously Strong Awards. It introduced all the Curiously Strong characters and gave the campaign a viral kick-start. There were twelve different awards, each based on an archetypal Facebook character. The characters were people we all know from our Facebook feeds, from the girl who “likes” everything to the guy who posts every detail of his life.</p>
-						<p>Altoids was known for smart, irreverent campaigns that were supported by their famous tagline, "Curiously Strong." In 2011, they needed to prove that they could be as witty and relevant in the digital world as they had once been in traditional media. The Altoids Curiously Strong Awards gave people a way to celebrate the Curiously Strong characters of Facebook, and integrated Altoids into all of our social networks.</p>
-					</div>
+						<p>There are plenty of dirty mouths on Facebook. Thankfully, Orbit knows a thing or two about cleaning those dirty mouths up. So we created Bleeping Clean Videos, a Facebook app that contained a series of bleeped-out videos that people could clean up, Mad-Lib style. As each video played, people could type in their own words, choose a hilarious theme, or have the app pick a random word, then share their masterpiece with their friends. All of which made Orbit the most innovative (and the most fun) way to clean up all the dirty mouths on Facebook.</p>
+<!-- 						<p>Altoids was known for smart, irreverent campaigns that were supported by their famous tagline, "Curiously Strong." In 2011, they needed to prove that they could be as witty and relevant in the digital world as they had once been in traditional media. The Altoids Curiously Strong Awards gave people a way to celebrate the Curiously Strong characters of Facebook, and integrated Altoids into all of our social networks.</p>
+ -->					</div>
+					<div class="flexslider">
+			          <ul class="slides">
+			            <li>
+								<img src="/media/images/portfolio/carousel/BleepingCleanTab_forEVB11.jpg" width="975" height="853" alt="BleepingCleanTab ForEVB11">
+			  	    		</li>
+			  	    		<li>
+								<img src="/media/images/portfolio/carousel/BleepingCleanTab_forEVB2.jpg" width="975" height="853" alt="BleepingCleanTab ForEVB2">
+			  	    		</li>
+			  	    		<li>
+								<img src="/media/images/portfolio/carousel/BleepingCleanTab_forEVB3.jpg" width="975" height="853" alt="BleepingCleanTab ForEVB3">
+			  	    		</li>
+			  	    		<li>
+								<img src="/media/images/portfolio/carousel/BleepingCleanTab_forEVB4.jpg" width="975" height="853" alt="BleepingCleanTab ForEVB4">
+			  	    		</li>
+							<li>
+								<img src="/media/images/portfolio/carousel/BleepingCleanTab_forEVB5.jpg" width="975" height="853" alt="BleepingCleanTab ForEVB5">
+			  	    		</li>
+			          </ul>
+			        </div> <!-- eof flex slider -->
 					<div class="videoHolder">
 						<video id="example_video_1" class="video-js vjs-tech " controls preload="none" width="975" height="548"
-						      poster="/media/images/portfolio/video/OrbitBleepingClean_videostills_hottub.jpg"
+						      poster="/media/images/portfolio/video/OrbitBleepingClean_videostills_intro.jpg"
 						      data-setup="{}">
-						    <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
-						    <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
-						    <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+						    
+						    <source type="video/webm" src="/media/video/BC_Intro_Resize.apple_.webm">
+						    <source type="video/mp4" src="/media/video/BC_Intro_Resize.apple_.mp4">
 						 </video>
-					</div>
+					</div> <!-- eof video holder -->
+					<div class="videoHolder">
+						<video id="example_video_2" class="video-js vjs-tech " controls preload="none" width="975" height="548"
+						      poster="/media/images/portfolio/video/OrbitBleepingClean_videostills_otherparty.jpg"
+						      data-setup="{}">
+						    
+						    <source type="video/webm" src="/media/video/BC_CleanedUp_Resize.apple_.webm">
+						    <source type="video/mp4" src="/media/video/BC_CleanedUp_Resize.apple_.mp4">
+						 </video>
+					</div> <!-- eof video holder -->
 				</div>
 			</div>
 		</div>
@@ -112,6 +139,7 @@
 	<!-- BEGIN <?php echo $settings->environment ?>: javascript -->
 	<script src="lib/js/jquery/jquery-1.8.0.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="lib/js/jquery/jquery.superscrollorama.js" type="text/javascript" charset="utf-8"></script>
+	<script src="lib/js/plugins/jquery.flexslider.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript" src="lib/js/plugins/greensock/TweenMax.min.js"></script>
 	<script src="lib/js/plugins/video.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="lib/js/master.js" type="text/javascript" charset="utf-8"></script>	
