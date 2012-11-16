@@ -28,7 +28,7 @@ if($settings->environment == PROD){
 <!-- BEGIN PROD: styles -->
 <link rel="stylesheet" href="styles/evbmaster-min.css" type="text/css" />
 <script type="text/javascript">
-	document.write('<link rel="stylesheet" href="styles/javascript.css" />'); 
+	document.write('<link rel="stylesheet" href="/styles/javascript.css" />'); 
 </script>
 <!-- END: styles -->
 <?	
@@ -37,9 +37,9 @@ if($settings->environment == PROD){
 
 ?>
 <!-- BEGIN <?php echo $settings->environment ?>: styles -->
-<link rel="stylesheet" type="text/css" href="styles/master.css" />
+<link rel="stylesheet" type="text/css" href="/styles/master.css" />
 <script type="text/javascript">
-	document.write('<link rel="stylesheet" href="styles/javascript.css" />'); 
+	document.write('<link rel="stylesheet" href="/styles/javascript.css" />'); 
 </script>
 <!-- END: styles -->
 <?	

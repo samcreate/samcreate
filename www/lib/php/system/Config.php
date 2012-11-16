@@ -1,7 +1,6 @@
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
-session_start();
 // =======================
 // = constants           =
 // =======================
@@ -10,7 +9,7 @@ define("DEV",   "dev_host_environment");
 define("STAGE", "stage_host_environment");
 define("PROD", "production_host_environment");
 
-require_once 'php-activerecord/ActiveRecord.php';
+require_once DIR_PLUGINS.'/php-activerecord/ActiveRecord.php';
 
 class Config {
     
@@ -50,12 +49,13 @@ class Config {
 			case "local.samcreate.com":
 			case "samcreate.com":
 			case "www.samcreate.com":
+			case "test.test.com":
 				
 				$this->environment = LOCAL;
 				$this->dbhost = 'localhost';
 				$this->dbuser = "root";
 				$this->dbpass = "root";
-				$this->dbname = "test";
+				$this->dbname = "samcreate";
 				$this->cdn_path = "/";
 				$this->base_url = "/";
 				$this->use_min = FALSE;

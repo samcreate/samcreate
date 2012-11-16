@@ -52,8 +52,8 @@ html[xmlns] .slides {display: block;}
 .flex-direction-nav a {width: 75px; height: 75px; margin: -20px 0 0; display: block; background: url(/media/images/sprite_carousel.gif) no-repeat 0 0; position: absolute; top: 50%; z-index: 10; cursor: pointer; text-indent: -9999px; opacity: 0; -webkit-transition: all .3s ease;   box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);}
 .flex-direction-nav .flex-next {background-position: -75px 0; margin-right: -9px; }
 .flex-direction-nav .flex-prev {left: -36px; margin-left: -9px;}
-.flexslider:hover .flex-next {opacity: 0.8; right: 5px;}
-.flexslider:hover .flex-prev {opacity: 0.8; left: 5px;}
+.flexslider:hover .flex-next {opacity: 1; right: 5px;}
+.flexslider:hover .flex-prev {opacity: 1; left: 5px;}
 .flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {opacity: 1;}
 .flex-direction-nav .flex-disabled {opacity: .3!important; filter:alpha(opacity=30); cursor: default;}
 

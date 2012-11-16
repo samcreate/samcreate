@@ -80,7 +80,7 @@ sam.homePage = function(){
 	        {css:{opacity: 1},onComplete:function(){
 	        	_$menuClone.addClass('animatedLogo').css({backgroundImage:"none"});
 		        	var img = document.createElement('img');
-			        img.src = "media/images/logo2.gif?p" + new Date().getTime();
+			        img.src = "/media/images/logo2.gif?p" + new Date().getTime();
 
 			        /* Once the image has loaded, set it as the background-image */
 			        $(img).load(function(){

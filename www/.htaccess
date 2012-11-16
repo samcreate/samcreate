@@ -15,7 +15,10 @@
 ### github.com/paulirish/html5-boilerplate-server-configs
 ###
 
-
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.php [L,QSA]
 
 # ----------------------------------------------------------------------
 # Better website experience for IE users
@@ -473,6 +476,7 @@ AddCharset utf-8 .html .css .js .xml .json .rss
 # Mobile Redirection to /www/mobile/
 #
 RewriteBase /
+
 
 
 
