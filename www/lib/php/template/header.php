@@ -63,15 +63,15 @@
 		</header>
 		<div id="MainContent" role="main">
 			<ul class="mainMenu" id="mainMenu">
-				<li class="menu home selected">
+				<li class="menu home ">
 					<a href="/">Home</a>
 					<p>My Blog</p>
 				</li>
 				<li class="menu portfolio">
-					<a href="/portfolio.php">Portfolio</a>
+					<a href="/portfolio/index">Portfolio</a>
 					<p>My work</p>
 				</li>
-				<li class="menu portfolio ">
+				<li class="menu  tink">
 					<a href="https://github.com/samcreate/" target="_blank">Tinkering</a>
 					<p>Experiments</p>
 				</li>

@@ -41,6 +41,12 @@ div#PageWrapper #canvas_top{z-index:-1; opacity:0.8;}
 div#PageWrapper #canvas_bottom{z-index:-2;}
 div#PageWrapper #canvas_temp{z-index:0;}
 
+body.portfolio div#PageWrapper ul.mainMenu li.portfolio {background:url('/media/images/arrow.png') no-repeat 49% top;}
+body.home div#PageWrapper ul.mainMenu li.home {background:url('/media/images/arrow.png') no-repeat 49% top;}
+body.resume div#PageWrapper ul.mainMenu li.resume {background:url('/media/images/arrow.png') no-repeat 49% top;}
+body.contact div#PageWrapper ul.mainMenu li.contact {background:url('/media/images/arrow.png') no-repeat 49% top;}
+
+
 
 /*
 Header
