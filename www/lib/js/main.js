@@ -31,6 +31,10 @@ sam.main = function(){
 				self.appVARS(window._app_vars);
 
 				_run();
+
+				_setup_scollMenu();
+
+				_setup_bg();
 		},
 		queue : function(f){
 			
@@ -98,7 +102,62 @@ sam.main = function(){
 			}
 		}(this.func, {scope:this._scope,amount:this.amount,time:this.time}));
 	}
+
+
+	function _setup_scollMenu(){
+		var _controller = $.superscrollorama();
+		var scrollDuration = 450;
+		var _$menuClone = $('#mainMenu').clone().attr('id','#mainMenu2');
+		$("#PageWrapper").prepend(_$menuClone);
+		_$menuClone.css({position:"fixed",right:"50%",margin:"0 -487px 0 auto","z-index":4,top:"-65px"});
+		
+
+		_controller.addTween('#MainContent', TweenMax.fromTo($('.logo'), 0.2, {css:{opacity: 1}, immediateRender:true},{css:{opacity: 0}}),100,250);
+
+		_controller.addTween(
+			'#MainContent',
+			(new TimelineLite())
+			.append(
+			[TweenMax.fromTo($('#mainMenu'), 0.3,
+				{css:{opacity: 1}, immediateRender:true},
+				{css:{opacity: 1}}),
+			TweenMax.fromTo($('body'), 1,
+				{css:{opacity: 1}, immediateRender:true},
+				{css:{opacity: 1},onComplete:function(){
+						_$menuClone.addClass('animatedLogo').css({backgroundImage:"none"});
+						var img = document.createElement('img');
+						img.src = "/media/images/logo2.gif?p" + new Date().getTime();
+
+						/* Once the image has loaded, set it as the background-image */
+						$(img).load(function(){
+							_$menuClone.css({backgroundImage: "url("+img.src+")"});
+						});
+				}, onReverseComplete:function(){
+				}})
+			]
+
+			).append(TweenMax.fromTo(_$menuClone, 1,
+				{css:{opacity: 1},immediateRender:true},
+				{css:{opacity: 1, top: 0},delay:1,
+
+			onReverseComplete:function(){
+				_$menuClone.css({backgroundImage:"none"});
+			},onComplete:function(){
+
+			}})),
+			scrollDuration, 150 // scroll duration of tween
+		);
+	}
 	
+	function _setup_bg () {
+
+		if(sam.bgController.canvasOkay()){
+			
+			sam.spirals.init(sam.bgController.animationLayer());
+			sam.bgController.queue(sam.spirals.redraw);
+			
+		}
+	}
 
 
 }();

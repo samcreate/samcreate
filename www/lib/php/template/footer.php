@@ -46,6 +46,7 @@
 	<script src="/lib/js/sam.bgController.js" type="text/javascript" charset="utf-8"></script>
 	<script src="/lib/js/effects/sam.spirals.js" type="text/javascript" charset="utf-8"></script>
 	<script src="/lib/js/homePage.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/lib/js/portfolio.js" type="text/javascript" charset="utf-8"></script>
 	<!-- END: javascript -->
 	<?	
 	} 
@@ -63,6 +64,16 @@
   		  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   		})();
 
-</script>
+	</script>
+	<script type="text/javascript">
+	
+	<?php 
+		if( defined('URI_PART_0') ){
+			echo "sam.main.queue(sam.".URI_PART_0.".init);";
+		}else{
+			echo "sam.main.queue(sam.homePage.init);";
+		}
+	 ?>
+	</script>
 </body>
 </html>

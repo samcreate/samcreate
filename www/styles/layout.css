@@ -20,6 +20,8 @@ html, body {
 
 }
 
+#tumblr_controls {display: none;}
+
 /*
 Body
 */
@@ -147,25 +149,26 @@ body .vjs-remaining-time,
 body .vjs-volume-control { display: none; }
 body .vjs-duration { float: right; }
 /*blog*/
-body.blog div#MainContent #mContainer hgroup{width:inherit;background:url('/media/images/pagehead.icon.png') no-repeat 50% bottom; height:119px;}
-body.blog div#MainContent #mContainer hgroup h2{width:inherit; height:36px; background:white; border:1px dotted black; text-align:center; vertical-align:middle; display : table-cell; font-family:Georgia, Utopia, 'Times New Roman', serif; font-size:26px; line-height:30px;font-variant: small-caps;font-weight: normal;letter-spacing: 4px;}
-body.blog div#MainContent #mContainer hgroup h3{font-family:'Palatino Linotype', Palatino, 'Book Antiqua', 'Times New Roman';font-size: 10px; font-style: normal;letter-spacing: 2px;line-height: 16px;text-transform: uppercase;width:inherit; text-align:center; padding-top:3px;}
 
-
-body.blog div#MainContent #mContainer ul#blog{margin-top:4px;}
+body.blog div#MainContent #mContainer ul#blog{margin-top:50px; width:975px}
 
 div#MainContent #mContainer li.post{
-  background:white; border:1px dotted black;
+  background:white; 
+ 
   margin-bottom:78px;
+  position: relative;
+  padding-left: 18px;
+  z-index: 1;
 
 }
 
-body.blog div#MainContent #mContainer li.post time{display: block;width: 150px;height: 150px; background:url('/media/images/date.bg.png') no-repeat; position:absolute;right: -44px; top: -37px; }
+body.blog div#MainContent #mContainer{background: none; padding: 0;width:975px;  }
+body.blog div#MainContent #mContainer li.post time{display: block;width: 150px;height: 150px; background:url('/media/images/date.bg.png') no-repeat; position:absolute;left: 54px; top: 32px; z-index: -1;}
 body.blog div#MainContent #mContainer li.post time span.month{font-family: 'Palatino Linotype', Palatino, 'Book Antiqua';font-size: 10px;font-style: normal;letter-spacing: 1px;line-height: 16px; position:absolute;top:39px;left:41%;}
-body.blog div#MainContent #mContainer li.post time span.day{font-family: Georgia, Utopia, 'Times New Roman', serif; font-size: 55px;position:absolute; text-align:center;top:47px;left:21px; width:100px;}
-body.blog div#MainContent #mContainer li.post h2 { letter-spacing: 1px; font-size: 49px; font-family: Georgia, Utopia, 'Times New Roman', serif; font-size: 48px; position:relative; top:32px; left:36px; width:76%;}
+body.blog div#MainContent #mContainer li.post time span.day{font-family: Georgia, Utopia, 'Times New Roman', serif; font-size: 55px;position:absolute; text-align:center;top:37%;left:21px; width:100px;}
+body.blog div#MainContent #mContainer li.post h2 { height:144px; letter-spacing: 1px; font-family: Georgia, Utopia, 'Times New Roman', serif; font-size: 2.4em; position:relative; top:78px; left:197px; width:77%;  line-height: 50px; }
 body.blog div#MainContent #mContainer li.post h2 span{color:#d4d4d4;}
-body.blog div#MainContent #mContainer li.post div.p_holder {text-align: justify;line-height: 22px;font-family: Georgia, Utopia, 'Times New Roman', serif;font-size: 14px; width:87%; margin:57px auto 42px; border-top:1px solid #d4d4d4;  border-bottom:1px solid #d4d4d4; padding-top:15px; padding-bottom:21px;}
+body.blog div#MainContent #mContainer li.post div.p_holder {text-align: justify; width:92%; margin:57px auto 42px; padding-top:15px; padding-bottom:21px; z-index: -2;position: relative; background: url('/media/images/p.bottom.gif' )no-repeat 0 top;}
 body.blog div#MainContent #mContainer li.post div.p_holder ol{list-style-type: decimal; padding-left: 40px;margin-bottom: 10px;}
 body.blog div#MainContent #mContainer li.post div.p_holder ol li{list-style-type: decimal;display: list-item;}
 body.blog div#MainContent #mContainer li.post div.p_holder ul{list-style-type: disc;padding-left: 40px;margin-bottom: 10px;}
@@ -176,15 +179,19 @@ body.blog div#MainContent #mContainer li.post div.p_holder em{font-style:italic;
 body.blog div#MainContent #mContainer li.post div.p_holder a{background:#000; color:white; padding: 1px 10px;text-decoration: none;}
 body.blog div#MainContent #mContainer li.post div.p_holder a:hover{background:#f26848;}
 body.blog div#MainContent #mContainer li.post div.p_holder a:visited{background:#d4d4d4;}
-body.blog div#MainContent #mContainer li.post div.p_holder p{padding:16px 0;}
+body.blog div#MainContent #mContainer li.post div.p_holder p{padding:16px 32px 16px 0;}
 body.blog div#MainContent #mContainer li.post div.p_holder img{float: right; clear: right; margin:0px 0px 17px 33px;}
 body.blog div#MainContent #mContainer li.photo div.p_holder img{float:none; margin:0px auto;}
-body.blog div#MainContent #mContainer li.quote div.p_holder big {color: rgba(0, 0, 0, 0.2);display: inline;font-family: "American Typewriter",Georgia,serif;font-size: 10em;line-height: 31px;position: absolute;top: 108px;}
-body.blog div#MainContent #mContainer li.quote div.p_holder blockquote{display: block;font-size: 1.3em;font-style: normal;font-variant: normal;font-weight: bold;height: 46px; padding-left: 18px;text-align: left;width: 76%; margin-left: 62px;height: 100%;line-height: 31px;clear:both; width: 75%;}
+body.blog div#MainContent #mContainer li.quote div.p_holder big {color: rgba(0, 0, 0, 0.2);display: inline;font-family: "American Typewriter",Georgia,serif;font-size: 10em;line-height: 31px;position: absolute;top: 115px; left: 163px;}
+body.blog div#MainContent #mContainer li.quote div.p_holder blockquote{display: block;font-size: 1.3em;font-style: normal;font-variant: normal;font-weight: bold;height: 46px; text-align: left;width: 67%; margin-left: 240px;height: 100%;line-height: 37px;clear:both; width: 75%; margin-top: 24px;}
+body.blog div#MainContent #mContainer li.quote { padding-top: 1px;}
+body.blog div#MainContent #mContainer li.quote time{ top:80px;}
+
+body.blog div#MainContent #mContainer li.audio p.player {padding-top:38px !important;}
 
 
 
-div#MainContent #mContainer li.post span.end{display:block; width:25px; height:7px; background:url('/media/images/end.png') no-repeat; text-indent:-9999px; top:-19px; left:49%;position:relative; clear:both;}
+div#MainContent #mContainer li.post span.end{display:block; width:975px;  background:url("/media/images/p.bottom.gif") no-repeat scroll 38px top transparent; text-indent:-9999px; clear:both; height: 31px; width: 975px;}
 .circle{display: block;
 }
 
@@ -192,7 +199,7 @@ div#MainContent #mContainer li.post span.end{display:block; width:25px; height:7
 div#MainContent #mContainer #pageNav li {
   display:inline; 
 }
-div#MainContent #mContainer #pageNav {padding:0;margin:-58px 0 0; float:right;}
+div#MainContent #mContainer #pageNav {padding:0;margin:-58px 0 0; float: right; }
 div#MainContent #mContainer #pageNav li.active a{background:#f26848;border:1px solid white;}
 div#MainContent #mContainer #pageNav li.active a:hover{ background:#f26848;border:1px solid white; }
 div#MainContent #mContainer #pageNav li a{ border-radius:16px; border:1px solid black; font-size:10px;  font-family: myHelveticaNeue,Arial,Helvetica,sans-serif; text-transform: uppercase;font-weight:bold; color:white; text-decoration:none; text-align:center; padding:5px 9px;  background:black; width:5px; height:5px;}
