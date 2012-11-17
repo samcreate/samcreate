@@ -60,7 +60,7 @@ div#PageWrapper ul.animatedLogo {background: no-repeat scroll 874px 10px black;}
 Content MainContent
 */
 div#MainContent{ z-index:3;width:100%;  height:100%; margin-top: 234px; position: relative;}
-div#MainContent #mContainer{ font-family: Georgia, Utopia, 'Times New Roman', serif; padding: 42px;width: 891px; line-height: 29px; background: white; min-height: 1200px; margin: 0px auto; margin-bottom:20px; }
+div#MainContent #mContainer{ font-family: Georgia, Utopia, 'Times New Roman', serif; padding: 42px;width: 891px; line-height: 29px; background: white; min-height: 500px; margin: 0px auto; margin-bottom:20px; }
 
 /*portfolio*/
 body.portfolio div#MainContent #mContainer{min-height: 800px;}

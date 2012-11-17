@@ -136,9 +136,9 @@ sam.main = function(){
 				}})
 			]
 
-			).append(TweenMax.fromTo(_$menuClone, 1,
-				{css:{opacity: 1},immediateRender:true},
-				{css:{opacity: 1, top: -10},delay:1,
+			).append(TweenMax.fromTo(_$menuClone, 0.3,
+				{css:{opacity: 1,top:-100},immediateRender:true},
+				{css:{opacity: 1, top: 0},delay:0.5,
 
 			onReverseComplete:function(){
 				_$menuClone.css({backgroundImage:"none"});
