@@ -106,13 +106,13 @@ sam.main = function(){
 
 	function _setup_scollMenu(){
 		var _controller = $.superscrollorama();
-		var scrollDuration = 450;
+		var scrollDuration = 320;
 		var _$menuClone = $('#mainMenu').clone().attr('id','#mainMenu2');
 		$("#PageWrapper").prepend(_$menuClone);
 		_$menuClone.css({position:"fixed",right:"50%",margin:"0 -487px 0 auto","z-index":4,top:"-65px"});
 		
 
-		_controller.addTween('#MainContent', TweenMax.fromTo($('.logo'), 0.2, {css:{opacity: 1}, immediateRender:true},{css:{opacity: 0}}),100,250);
+		 _controller.addTween('#MainContent', TweenMax.fromTo($('.logo'), 0.1, {css:{opacity: 1}, immediateRender:true},{css:{opacity: 0}}),100,250);
 
 		_controller.addTween(
 			'#MainContent',
@@ -136,7 +136,7 @@ sam.main = function(){
 				}})
 			]
 
-			).append(TweenMax.fromTo(_$menuClone, 0.3,
+			).append(TweenMax.fromTo(_$menuClone, 0.5,
 				{css:{opacity: 1,top:-100},immediateRender:true},
 				{css:{opacity: 1, top: 0},delay:0.5,
 

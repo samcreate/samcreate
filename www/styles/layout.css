@@ -188,7 +188,12 @@ body.blog div#MainContent #mContainer li.quote { padding-top: 1px;}
 body.blog div#MainContent #mContainer li.quote time{ top:80px;}
 
 body.blog div#MainContent #mContainer li.audio p.player {padding-top:38px !important;}
-
+body.blog div#MainContent #mContainer li.audio embed {width: 864px;height: 119px;}
+body.blog div#MainContent #mContainer li.set div.p_holder img{ float:left; width: 50%; }
+body.blog div#MainContent #mContainer li.set div.p_holder img:nth-last-of-type(1){padding-bottom: 25px }
+body.blog div#MainContent #mContainer li.set div.p_holder div.caption {background:#000; color:white; padding: 1px 10px; clear: both;}
+body.blog div#MainContent #mContainer li.set div.p_holder p{padding:0px;}
+body.blog div#MainContent #mContainer li.set div.p_holder {padding-top: 42px;}
 
 
 div#MainContent #mContainer li.post span.end{display:block; width:975px;  background:url("/media/images/p.bottom.gif") no-repeat scroll 38px top transparent; text-indent:-9999px; clear:both; height: 31px; width: 975px;}

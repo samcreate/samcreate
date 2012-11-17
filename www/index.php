@@ -34,6 +34,7 @@ define('URI_REQUEST', $_SERVER['REQUEST_URI']);
 
 //}}}
 //{{{ routing and other init
+header('Access-Control-Allow-Origin: http://samcreate.tumblr.com/');
 session_start();
 require_once DIR_SYS.'/Config.php';
 include DIR_SYS.'/router.php';

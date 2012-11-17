@@ -68,7 +68,7 @@
 	<script type="text/javascript">
 	
 	<?php 
-		if( defined('URI_PART_0') ){
+		if( defined('URI_PART_0') && URI_PART_0 != "page"){
 			echo "sam.main.queue(sam.".URI_PART_0.".init);";
 		}else{
 			echo "sam.main.queue(sam.homePage.init);";
