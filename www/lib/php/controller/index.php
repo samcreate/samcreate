@@ -5,7 +5,8 @@ $settings->setPage("HomePage");
 
 $class = "home blog";
 $url = "http://samcreate.tumblr.com/";
-if(defined('URI_PART_1')) $url = $url."page/".URI_PART_1;
+if(defined('URI_PART_1') && URI_PART_1 != "1") $url = $url."page/".URI_PART_1;
+
 
 
 $f = curl_get_file_contents($url);

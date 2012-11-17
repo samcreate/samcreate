@@ -121,7 +121,7 @@ sam.main = function(){
 			[TweenMax.fromTo($('#mainMenu'), 0.3,
 				{css:{opacity: 1}, immediateRender:true},
 				{css:{opacity: 1}}),
-			TweenMax.fromTo($('body'), 1,
+			TweenMax.fromTo($('html'), 1,
 				{css:{opacity: 1}, immediateRender:true},
 				{css:{opacity: 1},onComplete:function(){
 						_$menuClone.addClass('animatedLogo').css({backgroundImage:"none"});
@@ -138,7 +138,7 @@ sam.main = function(){
 
 			).append(TweenMax.fromTo(_$menuClone, 1,
 				{css:{opacity: 1},immediateRender:true},
-				{css:{opacity: 1, top: 0},delay:1,
+				{css:{opacity: 1, top: -10},delay:1,
 
 			onReverseComplete:function(){
 				_$menuClone.css({backgroundImage:"none"});

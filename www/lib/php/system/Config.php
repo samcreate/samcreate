@@ -37,6 +37,7 @@ class Config {
 	var $facebook_app_id;
 	var $page;
 	var $title = "Samcreate |";
+	var $doc_root;
 	 
 	private function __construct($server_name = '') {
 		
@@ -44,11 +45,8 @@ class Config {
 		
 		$this->server_name = $server_name == ''?$_SERVER['SERVER_NAME']:$server_name;
 		
-		
 		switch($this->server_name) {
 			case "local.samcreate.com":
-			case "samcreate.com":
-			case "www.samcreate.com":
 			case "test.test.com":
 				
 				$this->environment = LOCAL;
@@ -61,23 +59,26 @@ class Config {
 				$this->use_min = FALSE;
 				$this->debug = FALSE;
 				$this->facebook_app_id = "";
+				$this->doc_root = $_SERVER['DOCUMENT_ROOT'];
 				
 			break;
-			
+			case "samcreate.com":
+			case "www.samcreate.com":
 			case "production_url.com":
 				//turn off error reporting for production
 				error_reporting(0);
 				ini_set('display_errors', '0');
-				$this->environment = PROD;
+				$this->environment = STAGE;
 				$this->dbhost = 'localhost';
-				$this->dbuser = "root";
-				$this->dbpass = "root";
-				$this->dbname = "DATABASE_NAME";
+				$this->dbuser = "sammy_sammy";
+				$this->dbpass = "gr33n3d44";
+				$this->dbname = "sammy_2012";
 				$this->cdn_path = "";
 				$this->base_url = "/";
 				$this->use_min = FALSE;
 				$this->debug = FALSE;
 				$this->facebook_app_id = "";
+				$this->doc_root = $_SERVER['DOCUMENT_ROOT']."/2012";
 				
 			break;
 
@@ -159,11 +160,11 @@ class Config {
 		 $connections = array(
 		    'development' => 'mysql://'.$this->dbuser.':'.$this->dbpass.'@'.$this->dbhost.'/'.$this->dbname
 		  );
-		 
+		 $dr = $this->doc_root;
 		 # must issue a "use" statement in your closure if passing variables
-		 ActiveRecord\Config::initialize(function($cfg) use ($connections)
+		 ActiveRecord\Config::initialize(function($cfg) use ($connections, $dr)
 		 {
-		   $cfg->set_model_directory($_SERVER['DOCUMENT_ROOT'].'/lib/php/Models');
+		   $cfg->set_model_directory($dr.'/lib/php/Models');
 		   $cfg->set_connections($connections);
 		   $cfg->set_default_connection('development');
 		 });
