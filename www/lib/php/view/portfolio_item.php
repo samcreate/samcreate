@@ -20,20 +20,21 @@
 				         ?>
 			          </ul>
 			        </div> <!-- eof flex slider -->
-					
+
 						<?php
 
 				          	foreach ($campaign->videos as $vids) {
-				          		$html = "";
-				          		$html .= "<div class='videoHolder'>";
-				          		$html .= "<video id='example_video_$vids->id' class='video-js vjs-tech ' controls preload='none' width='975' height='548'
-						      poster='/media/images/portfolio/video/$vids->image_still'
-						      data-setup='{}'>";
-				          		$html .= "	<source type='video/webm' src='/media/video/$vids->webm'>";
-								$html .= "	<source type='video/mp4' src='/media/video/$vids->mp4'>";
-				          		$html .= "</video>";
-				          		$html .= "</div>";
-				          		echo $html;
+				          		
+				        ?>
+				        		<div class="videoHolder video" data-video-id="sam_video_<?=$vids->id;?>" data-poster="/media/images/portfolio/video/<?=$vids->image_still;?>" data-video-urls='{"mp4": "/media/video/<?=$vids->mp4;?>", "webm": "/media/video/<?=$vids->webm;?>", "ogg": "" }'>
+				       				<video id='sam_video_<?=$vids->id;?>' class='video-js vjs-tech ' controls preload='metadata' width='975' height='548'
+						      poster='/media/images/portfolio/video/<?=$vids->image_still;?>'
+						      data-setup='{}'>
+						      			<source type='video/webm' src='/media/video/<?=$vids->webm;?>'><source type='video/mp4' src='/media/video/<?=$vids->mp4;?>'>
+						      		</video>
+						      	</div>
+				        <?php
+				          
 				          	}
 				         ?>
 

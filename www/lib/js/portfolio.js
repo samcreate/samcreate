@@ -39,12 +39,13 @@ sam.portfolio = function(){
 	
 	function _run(){
 
-		$('.videoHolder').each(function(index, value) {
-			if($(this).find('video').size() > 0) {
-				var _id = $(this).find('video').attr('id');
-				_V_(_id);
-			}
-		});
+		// $('.videoHolder').each(function(index, value) {
+		// 	if($(this).find('video').size() > 0) {
+		// 		var _id = $(this).find('video').attr('id');
+		// 		alert(_id);
+		// 		_V_(_id);
+		// 	}
+		// });
 
 		$('.flexslider').flexslider({
 			animation: "slide",

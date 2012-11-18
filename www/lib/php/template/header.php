@@ -9,14 +9,16 @@
 
 	<!-- BEGIN: meta tags -->
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="description" content=""/> 
-	<meta name="keywords" content=""/>
+	<meta name="google-site-verification" content="tC0GYk21ovT1pQyFGJ7UbiXV-XC84u_PBzqETGvt7XI" />
+    <meta name="description" content="Most great digital ninjas are always on the pendulum of being completely introvert or too extroverted, but always consistently lactose intolerant. True digital ninjas are always trying to get the humbling feeling of when trying to learn something new." />
+	<meta name="keywords" content="samuel, aaron, mcguire, ad, advertising, interactive, shoot the banker, vestal watch, vw, digital, mobile, social media, fms, arduino" />
+	<meta name="author" content="Aaron McGuire" />
 	<link rel="shortcut icon" href="favicon.ico"/> 
 	<meta name="description" content="">
-	<meta name="author" content="">
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<!-- END: meta tags -->
 	<!-- BEGIN: OG FBook meta tags -->
 	<meta property="fb:admins" content=""/> 

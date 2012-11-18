@@ -125,7 +125,7 @@ class Config {
 	
 	public function getPageTitle(){
 		
-		echo $this->title.'-> '.$this->page;
+		echo $this->title.'-> '.$this->page.' | Aaron McGuire';
 	}
 
 	public function getBaseUrl() {
