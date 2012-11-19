@@ -167,6 +167,7 @@ body.blog div#MainContent #mContainer li.post time{display: block;width: 150px;h
 body.blog div#MainContent #mContainer li.post time span.month{font-family: 'Palatino Linotype', Palatino, 'Book Antiqua';font-size: 10px;font-style: normal;letter-spacing: 1px;line-height: 16px; position:absolute;top:39px;left:41%;}
 body.blog div#MainContent #mContainer li.post time span.day{font-family: Georgia, Utopia, 'Times New Roman', serif; font-size: 55px;position:absolute; text-align:center;top:37%;left:21px; width:100px;}
 body.blog div#MainContent #mContainer li.post h2 { height:144px; letter-spacing: 1px; font-family: Georgia, Utopia, 'Times New Roman', serif; font-size: 2.4em; position:relative; top:78px; left:197px; width:77%;  line-height: 50px; }
+body.blog div#MainContent #mContainer li.post h2 a{text-decoration: none;} 
 body.blog div#MainContent #mContainer li.post h2 span{color:#d4d4d4;}
 body.blog div#MainContent #mContainer li.post div.p_holder {text-align: justify; width:92%; margin:57px auto 42px; padding-top:15px; padding-bottom:21px; z-index: -2;position: relative; background: url('/media/images/p.bottom.gif' )no-repeat 0 top;}
 body.blog div#MainContent #mContainer li.post div.p_holder ol{list-style-type: decimal; padding-left: 40px;margin-bottom: 10px;}

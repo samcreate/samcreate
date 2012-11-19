@@ -28,7 +28,7 @@
 	<meta property="og:site_name" content=""/> 
 	<meta property="og:description" content=""/> 
 	<meta name='text:Disqus samcreate' content='' />
-	<meta property="og:image" content="<?php echo $settings->protocol ?>://<?php echo $settings->server_name ?>/media/images/facebook_share.jpg" />
+	<!-- <meta property="og:::::::imagez" content="<?php echo $settings->protocol ?>://<?php echo $settings->server_name ?>/media/images/facebook_share.jpg" /> -->
 	<!-- END: OG FBook meta tags -->
 	<?
 
