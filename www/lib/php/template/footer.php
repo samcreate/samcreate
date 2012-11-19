@@ -41,6 +41,8 @@
 	<script src="/lib/js/plugins/jquery.flexslider.js" type="text/javascript" charset="utf-8"></script>
 	<script src="/lib/js/plugins/greensock/TweenMax.min.js" type="text/javascript"></script>
 	<script src="/lib/js/plugins/video.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/lib/js/plugins/shCore.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/lib/js/plugins/brushes/shBrushJScript.js" type="text/javascript" charset="utf-8"></script>
 	<script src="/lib/js/master.js" type="text/javascript" charset="utf-8"></script>	
 	<script src="/lib/js/main.js" type="text/javascript" charset="utf-8"></script>
 	<script src="/lib/js/sam.bgController.js" type="text/javascript" charset="utf-8"></script>

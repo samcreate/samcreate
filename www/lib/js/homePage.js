@@ -41,7 +41,7 @@ sam.homePage = function(){
 
 		
 
-		
+		SyntaxHighlighter.all();
 	
 	}
 		

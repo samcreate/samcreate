@@ -3,4 +3,7 @@
 @import url(layout.css) screen;
 @import url(video-js.min.css) screen;
 @import url(flexslider.css) screen;
+@import url(shCore.css) screen;
+@import url(shCoreDefault.css) screen;
+@import url(shThemeDefault.css) screen;
 @import url(typography.css) screen;
