@@ -65,6 +65,7 @@ sam.main = function(){
 		checkMobile: function() {
 			if(navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i) ||navigator.userAgent.match(/BlackBerry/i)){
 				self.vars.isMobile = true;	
+				self.hideAddressBar();
 			} 
 		},		
 		checkIpad: function() {
@@ -72,6 +73,12 @@ sam.main = function(){
 				self.vars.isIpad = true;
 			}
 		},
+		hideAddressBar: function() {
+		  	if(document.height < window.outerHeight) {
+		    	document.body.style.height = (window.outerHeight + 90) + 'px';
+		    }
+				setTimeout( function(){ window.scrollTo(0, 15); }, 50 );
+		}
 	
 	};
 	

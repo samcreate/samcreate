@@ -3,6 +3,7 @@
 Router::add('/', DIR_CTRL.'/index.php');
 Router::add('#^/page/[^/]+$#', DIR_CTRL.'/index.php', Router::ROUTE_PCRE);
 Router::add('#^/post/[^/]+$#', DIR_CTRL.'/index.php', Router::ROUTE_PCRE);
+Router::add('/about/index', DIR_CTRL.'/about.php');
 Router::add('/portfolio/index', DIR_CTRL.'/portfolio_index.php');
 Router::add('/portfolio/item', DIR_CTRL.'/portfolio_item.php');
 Router::add('#^/portfolio/[^/]+$#', DIR_CTRL.'/portfolio_item.php', Router::ROUTE_PCRE);

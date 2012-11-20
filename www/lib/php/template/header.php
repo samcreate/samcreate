@@ -81,8 +81,8 @@
 					<p>Experiments</p>
 				</li>
 				<li class="menu about">
-					<a href="">Me</a>
-					<p>My Resume</p>
+					<a href="/about/index">About</a>
+					<p>Buy Me</p>
 				</li>
 				<li class="menu contact">
 					<a href="">Contact</a>

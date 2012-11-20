@@ -37,5 +37,10 @@
 				         ?>
 
 				</div>
+				<nav id="pageNav">
+					<ul class="clearfix">
+						<li><a id="pageNavOlder" href="/portfolio/index">Back</a></li>
+                    </ul>
+                </nav>
 			</div>
 <?php include DIR_TMPL.'/footer.php'; ?>
