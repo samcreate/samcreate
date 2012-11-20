@@ -348,7 +348,7 @@ and (max-width : 320px) {
     div#MainContent #mContainer #pageNav {text-align: center; float:none; margin: -12px 0 0;}
 
     body.portfolio div#MainContent #mContainer {padding: 0px;margin-top: 113px; width:298px;}
-    body.portfolio div#MainContent #mContainer ul.thumbs {margin-top: 49px; position: static; width:320px;}
+    body.portfolio div#MainContent #mContainer ul.thumbs {margin-top: 49px; position: static; width:320px;padding-bottom: 25px;}
     body.portfolio div#MainContent #mContainer ul.thumbs li {float:none; padding: 0px;width: 285px; height: 281px;padding: 1px 0px; margin:0px auto;}
     body.portfolio div#MainContent #mContainer ul.thumbs li:first-child {padding-top: 16px;}
     body.portfolio div#MainContent #mContainer ul.thumbs li a {width: 266px; height: 266px;}
