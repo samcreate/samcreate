@@ -50,7 +50,7 @@ div#PageWrapper #canvas_bottom{}
 
 body.portfolio div#PageWrapper ul.mainMenu li.portfolio {background:url('/media/images/arrow.png') no-repeat 49% top;}
 body.home div#PageWrapper ul.mainMenu li.home {background:url('/media/images/arrow.png') no-repeat 49% top;}
-body.resume div#PageWrapper ul.mainMenu li.resume {background:url('/media/images/arrow.png') no-repeat 49% top;}
+body.about div#PageWrapper ul.mainMenu li.about {background:url('/media/images/arrow.png') no-repeat 49% top;}
 body.contact div#PageWrapper ul.mainMenu li.contact {background:url('/media/images/arrow.png') no-repeat 49% top;}
 
 
@@ -289,6 +289,22 @@ and (max-device-width : 480px) {
   body.blog div#MainContent #mContainer li.quote div.p_holder blockquote {margin-left: 0px;width: 96%;}
   body.blog div#MainContent #mContainer li.quote div.p_holder big {display: none;}
 
+  /*about me*/
+  body.about div#MainContent #mContainer {width:453px;overflow: hidden;}
+  body.about div#MainContent #mContainer ul#blog {width:453px;}
+  body.about div#MainContent #mContainer li.post{padding-top: 0px;margin:0px auto 37px auto;width:100%; padding-left: 0px !important;}
+  body.about div#MainContent #mContainer li.post time {-webkit-transform: scale(0.6,0.6); position: static;margin-left: -16px;}
+  body.about div#MainContent #mContainer li.post h2 {position: absolute; top: 58px;left: 115px;font-size: 122%;height: 77px;line-height: 29px;width: 274px;}
+  body.about div#MainContent #mContainer li.post div.p_holder {margin:-20px auto 11px;background-position: 50% top ; margin-left: auto; margin-right: auto; overflow: hidden;padding-bottom: 0px; width: 420px;}
+  body.about div#MainContent #mContainer li.post div.p_holder p {padding: 16px 0px 16px 0;}
+  body.about div#MainContent #mContainer li.post div.p_holder pre{width:90%; font-size: 13px;line-height: 14px;}
+  body.about div#MainContent #mContainer li.set div.p_holder div.caption {width: 93%;font-size: 12px;line-height: 22px;}
+  body.about div#MainContent #mContainer li.quote time {display: none;}
+  body.about div#MainContent #mContainer li.quote {padding-top: 45px;}
+  body.about div#MainContent #mContainer li.quote div.p_holder blockquote {margin-left: 0px;width: 96%;}
+  body.about div#MainContent #mContainer li.quote div.p_holder big {display: none;}
+  body.about div#MainContent #mContainer li.post div.p_holder img {width:40%}
+  /*portfolio*/
   body.portfolio div#MainContent #mContainer {width: 456px; overflow: hidden; padding: 0px;min-height: 0px;padding-bottom: 58px;}
   body.portfolio div#MainContent #mContainer ul.thumbs {width:100%; position: static;}
   body.portfolio div#MainContent #mContainer ul.thumbs li {padding: 0px; width:228px; height: 228px;}
@@ -360,11 +376,9 @@ and (max-width : 320px) {
   body.about div#MainContent #mContainer li.post div.p_holder {margin:-20px auto 11px;background-position: -310px top ; width: 261px; overflow: hidden;padding-bottom: 0px;}
   body.about div#MainContent #mContainer li.post div.p_holder pre{width:300px; font-size: 10px;}
   body.about div#MainContent #mContainer li.post div.p_holder .syntaxhighlighter{width:90%; font-size: 8px !important;}
+  body.about div#MainContent #mContainer li.post div.p_holder img {width: 100%;}
   body.about div#MainContent #mContainer li.post div.p_holder p {padding: 16px 12px 17px 0;}
-  body.about div#MainContent #mContainer li.set div.p_holder img {width: 100%;  padding-bottom: 25px;}
-  body.about div#MainContent #mContainer li.quote {padding-top: 50px;}
-  body.about div#MainContent #mContainer li.quote div.p_holder big{display: none!important;}
-  body.about div#MainContent #mContainer li.quote div.p_holder blockquote{margin-left: 0px;}
+
 
 
  /* body.home div#PageWrapper ul.mainMenu li.home {background-color: black;} */
