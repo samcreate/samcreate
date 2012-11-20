@@ -40,7 +40,7 @@ sam.homePage = function(){
 	function _run(){
 
 		
-
+		if(sam.main.vars.isMobile) return;
 		SyntaxHighlighter.all();
 	
 	}

@@ -39,13 +39,17 @@ sam.portfolio = function(){
 	
 	function _run(){
 
-		// $('.videoHolder').each(function(index, value) {
-		// 	if($(this).find('video').size() > 0) {
-		// 		var _id = $(this).find('video').attr('id');
-		// 		alert(_id);
-		// 		_V_(_id);
-		// 	}
-		// });
+		
+
+		if(!sam.main.vars.isMobile){
+
+			
+			$('.video').each(function(index, value) {
+				if($(this).find('video').size() > 0) {
+					var _vid = _V_($(this).find('video').attr('id'));
+				}
+			});
+		}
 
 		$('.flexslider').flexslider({
 			animation: "slide",

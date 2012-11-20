@@ -1,11 +1,11 @@
 		</div>
-		<canvas id="canvas_top" width="1024" height="768">Sorry, you don't have an awesome browser?</canvas>
-		<canvas id="canvas_bottom" width="1024" height="768">Sorry, you don't have an awesome browser?</canvas>
+
 		
 		<footer>
 
 		</footer>
 	</div>
+
 	<!--[if lt IE 7 ]>
 	<script src="/lib/js/plugins/dd_belatedpng.js"></script>
 	<script> DD_belatedPNG.fix('img, .png_bg');</script>
@@ -37,9 +37,8 @@
 	?>
 	<!-- BEGIN <?php echo $settings->environment ?>: javascript -->
 	<script src="/lib/js/jquery/jquery-1.8.0.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="/lib/js/jquery/jquery.superscrollorama.js" type="text/javascript" charset="utf-8"></script>
 	<script src="/lib/js/plugins/jquery.flexslider.js" type="text/javascript" charset="utf-8"></script>
-	<script src="/lib/js/plugins/greensock/TweenMax.min.js" type="text/javascript"></script>
+	<script src="/lib/js/plugins/move.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="/lib/js/plugins/video.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="/lib/js/plugins/shCore.js" type="text/javascript" charset="utf-8"></script>
 	<script src="/lib/js/plugins/brushes/shBrushJScript.js" type="text/javascript" charset="utf-8"></script>
@@ -70,7 +69,7 @@
 	<script type="text/javascript">
 	
 	<?php 
-		if( defined('URI_PART_0') && URI_PART_0 != "page"){
+		if( defined('URI_PART_0') && URI_PART_0 != "page" && URI_PART_0 != "post"){
 			echo "sam.main.queue(sam.".URI_PART_0.".init);";
 		}else{
 			echo "sam.main.queue(sam.homePage.init);";

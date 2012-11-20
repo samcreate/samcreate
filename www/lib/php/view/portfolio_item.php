@@ -19,7 +19,7 @@
 			          		echo $html;
 				         ?>
 			          </ul>
-			        </div> <!-- eof flex slider -->
+			        </div> <!-- eof flex slider vjs-tech-->
 
 						<?php
 
@@ -27,9 +27,7 @@
 				          		
 				        ?>
 				        		<div class="videoHolder video" data-video-id="sam_video_<?=$vids->id;?>" data-poster="/media/images/portfolio/video/<?=$vids->image_still;?>" data-video-urls='{"mp4": "/media/video/<?=$vids->mp4;?>", "webm": "/media/video/<?=$vids->webm;?>", "ogg": "" }'>
-				       				<video id='sam_video_<?=$vids->id;?>' class='video-js vjs-tech ' controls preload='metadata' width='975' height='548'
-						      poster='/media/images/portfolio/video/<?=$vids->image_still;?>'
-						      data-setup='{}'>
+				       				<video id='sam_video_<?=$vids->id;?>' controls="" class='video-js'preload='metadata' poster='/media/images/portfolio/video/<?=$vids->image_still;?>'>
 						      			<source type='video/webm' src='/media/video/<?=$vids->webm;?>'><source type='video/mp4' src='/media/video/<?=$vids->mp4;?>'>
 						      		</video>
 						      	</div>

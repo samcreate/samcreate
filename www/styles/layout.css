@@ -31,17 +31,22 @@ body{background:#ffffff; }
 PageWrapper
 */
 div#PageWrapper{}
-div#PageWrapper ul.mainMenu{text-align:left; width:975px; height:52px; background:black;  color:#FFFFFF;font-family: Georgia, Utopia, 'Times New Roman', serif; font-size:14px; font-weight:normal; padding-top: 13px; margin: 0 auto 27px;}
+
+div#PageWrapper ul.mainMenu{text-align:left; width:975px; height:52px; background:black;  color:#FFFFFF;font-family: Georgia, Utopia, 'Times New Roman', serif; font-size:14px; font-weight:normal; padding-top: 13px; margin: 0 auto 27px;
+  
+}
+
+
+
 div#PageWrapper ul.mainMenu li{height: 30px;line-height: 16px;vertical-align: top;text-align:center;width:78px;display: inline-block;margin-right:9px;margin-top:-4px;border-right: 1px dotted #666;padding-right: 8px;padding-top: 13px;/* For IE 7 */zoom: 1;*display: inline;}
 div#PageWrapper ul.mainMenu li.selected{background:url('/media/images/arrow.png') no-repeat 49% top;}
 div#PageWrapper ul.mainMenu li:last-child{border:none; }
 div#PageWrapper ul.mainMenu li a{margin-bottom: 1px; display:block; color:white; text-decoration:none; font-family: Georgia, Utopia, 'Times New Roman', serif; font-size:14px; font-weight:normal; }
 div#PageWrapper ul.mainMenu li p{color:#989898; font-family: Georgia, 'Times New Roman', serif;font-size: 10px;font-style: italic; font-weight: normal;letter-spacing: 1px; line-height: 16px;}
 div#PageWrapper h1.logo{background-image:url('/media/images/logo.png'); width:235px; height:180px; z-index:0;  margin-bottom: 27px;}
-div#PageWrapper canvas{width:100%; height:100%; position:fixed; top:0px; left:0px;z-index:0;}
-div#PageWrapper #canvas_top{z-index:-1; opacity:0.8;}
-div#PageWrapper #canvas_bottom{z-index:-2;}
-div#PageWrapper #canvas_temp{z-index:0;}
+div#PageWrapper canvas{width:100%; height:100%; position:fixed; top:0px; left:0px;}
+div#PageWrapper #canvas_top{ opacity:0.8;}
+div#PageWrapper #canvas_bottom{}
 
 body.portfolio div#PageWrapper ul.mainMenu li.portfolio {background:url('/media/images/arrow.png') no-repeat 49% top;}
 body.home div#PageWrapper ul.mainMenu li.home {background:url('/media/images/arrow.png') no-repeat 49% top;}
@@ -53,13 +58,13 @@ body.contact div#PageWrapper ul.mainMenu li.contact {background:url('/media/imag
 /*
 Header
 */
-header{  width: 975px; margin:0 -488px 0 auto; position: fixed;left: 50%; right:50%; top: 27px; z-index: 1;}
+header{  width: 975px; margin:0 -488px 0 auto; position: fixed;left: 50%; right:50%; top: 27px; }
 div#PageWrapper ul.animatedLogo {background: no-repeat scroll 874px 10px black;}
 
 /*
 Content MainContent
 */
-div#MainContent{ z-index:3;width:100%;  height:100%; margin-top: 234px; position: relative;}
+div#MainContent{ width:100%;  height:100%; margin-top: 234px; position: relative;}
 div#MainContent #mContainer{ font-family: Georgia, Utopia, 'Times New Roman', serif; padding: 42px;width: 891px; line-height: 29px; background: white; min-height: 500px; margin: 0px auto; margin-bottom:20px; }
 
 /*portfolio*/
@@ -191,9 +196,9 @@ body.blog div#MainContent #mContainer li.quote time{ top:80px;}
 
 body.blog div#MainContent #mContainer li.audio p.player {padding-top:38px !important;}
 body.blog div#MainContent #mContainer li.audio embed {width: 864px;height: 119px;}
-body.blog div#MainContent #mContainer li.set div.p_holder img{ float:left; width: 50%; }
+body.blog div#MainContent #mContainer li.set div.p_holder img{ float:left; width: 49%; border-right: 1px solid white; border-bottom: 1px solid white;}
 body.blog div#MainContent #mContainer li.set div.p_holder img:nth-last-of-type(1){padding-bottom: 25px }
-body.blog div#MainContent #mContainer li.set div.p_holder div.caption {background:#000; color:white; padding: 1px 10px; clear: both;}
+body.blog div#MainContent #mContainer li.set div.p_holder div.caption {background:#000; color:white; padding: 1px 10px; clear: both;width: 845px;}
 body.blog div#MainContent #mContainer li.set div.p_holder p{padding:0px;}
 body.blog div#MainContent #mContainer li.set div.p_holder {padding-top: 42px;}
 
@@ -232,12 +237,75 @@ and (max-device-width : 480px) {
 @media only screen 
 and (min-width : 321px) {
 /* Styles */
+div#MainContent{ margin-top: 44px;}
+  header{width:100%; position: relative; margin:0px; padding:0px; left:0px; right:0px; z-index: 2;}
+  header h1{margin:0px auto;}
+  div#PageWrapper canvas {z-index: -1;}
+  div#PageWrapper {width:100%; overflow: hidden;}
+  body.blog div#MainContent #mContainer {width:453px;margin-top: -55px;overflow: hidden;}
+  div#PageWrapper ul.mainMenu{  width:95%; }
+  div#PageWrapper ul.mainMenu li {width: 69px;}
+  div#PageWrapper ul.mainMenu li:first-child{ padding-left: 8px;}
+  body.blog div#MainContent #mContainer ul#blog {width:453px;}
+  body.blog div#MainContent #mContainer li.post{padding-top: 0px;margin:0px auto 37px auto;width:100%; padding-left: 0px !important;}
+  body.blog div#MainContent #mContainer li.post time {-webkit-transform: scale(0.6,0.6); position: static;margin-left: -16px;}
+  body.blog div#MainContent #mContainer li.post h2 {position: absolute; top: 58px;left: 115px;font-size: 122%;height: 77px;line-height: 29px;width: 274px;}
+  body.blog div#MainContent #mContainer li.post div.p_holder {margin:-20px auto 11px;background-position: 50% top ; margin-left: auto; margin-right: auto; overflow: hidden;padding-bottom: 0px; width: 420px;}
+  body.blog div#MainContent #mContainer li.post div.p_holder p {padding: 16px 0px 16px 0;}
+  body.blog div#MainContent #mContainer li.post div.p_holder pre{width:90%; font-size: 13px;}
+  body.blog div#MainContent #mContainer li.set div.p_holder div.caption {width: 93%;font-size: 12px;line-height: 22px;}
+  div#MainContent #mContainer li.post span.end { background-position: 50% top ; width: 406px; overflow: hidden;margin: 0px auto;}
+  div#MainContent #mContainer #pageNav {margin: -27px 0 0;}
+
+
 }
 
 /* Smartphones (portrait) ----------- */
 @media only screen 
 and (max-width : 320px) {
 /* Styles */
+  div#MainContent{ margin-top: 44px;}
+  header{width:320px; position: relative; margin:0px; padding:0px; left:0px; right:0px; z-index: 2;}
+  header h1{margin:0px auto;}
+  div#PageWrapper canvas {z-index: -1;}
+  div#PageWrapper {width:320px; overflow: hidden;}
+  div#PageWrapper ul.mainMenu{ width:320px; height: 256px; background: none;}
+  div#PageWrapper ul.mainMenu li { width:290px; background-color: black !important; height: 48px;  overflow: hidden; border-bottom: 1px solid #333;margin: 0px auto;display: block; border-right: none;}
+ 
+  body.blog div#MainContent #mContainer {width:320px;margin-top: 86px;}
+  body.blog div#MainContent #mContainer ul#blog {width:320px;}
+  body.blog div#MainContent #mContainer li.post{padding-top: 15px;margin:0px auto 37px auto;width:298px; padding-left: 0px !important;}
+  body.blog div#MainContent #mContainer li.post time {display: none;}
+  body.blog div#MainContent #mContainer li.post h2 { position: static; width:290px;  height: auto; padding-bottom: 31px; text-align: center; font-size: 30px;}
+  body.blog div#MainContent #mContainer li.post div.p_holder {margin:-20px auto 11px;background-position: -310px top ; width: 261px; overflow: hidden;padding-bottom: 0px;}
+  body.blog div#MainContent #mContainer li.post div.p_holder pre{width:300px; font-size: 10px;}
+    body.blog div#MainContent #mContainer li.post div.p_holder .syntaxhighlighter{width:90%; font-size: 8px !important;}
+    body.blog div#MainContent #mContainer li.post div.p_holder p {padding: 16px 12px 17px 0;}
+    body.blog div#MainContent #mContainer li.set div.p_holder img {width: 100%;  padding-bottom: 25px;}
+    div#MainContent #mContainer li.post span.end { background-position: 50% top ; width: 280px; overflow: hidden;margin: 0px auto;width: 261px;}
+    body.blog div#MainContent #mContainer li.quote {padding-top: 50px;}
+    body.blog div#MainContent #mContainer li.quote div.p_holder big{display: none!important;}
+    body.blog div#MainContent #mContainer li.quote div.p_holder blockquote{margin-left: 0px;}
+    div#MainContent #mContainer #pageNav {text-align: center; float:none; margin: -12px 0 0;}
+
+    body.portfolio div#MainContent #mContainer {padding: 0px;margin-top: 47px; width:298px;}
+    body.portfolio div#MainContent #mContainer ul.thumbs {margin-top: 49px; position: static; width:320px;}
+    body.portfolio div#MainContent #mContainer ul.thumbs li {float:none; padding: 0px;width: 285px; height: 281px;padding: 1px 0px; margin:0px auto;}
+    body.portfolio div#MainContent #mContainer ul.thumbs li:first-child {padding-top: 16px;}
+    body.portfolio div#MainContent #mContainer ul.thumbs li a {width: 266px; height: 266px;}
+    body.portfolio div#MainContent #mContainer ul.thumbs li img{width: 266px; height: 266px;}
+    body.portfolio div#MainContent #mContainer ul.thumbs li a h3 {display: none;}
+
+    body.portfolio.item div.holder { width: 298px; position: static;}
+    body.portfolio.item div.holder img {width: 100%; height: 121px;padding-top: 20px;}
+    body.portfolio.item div.holder .flexslider img {height: initial;}
+    .flex-direction-nav {display: none;}
+    body.portfolio.item div.holder h2.title {font-size: 123.1%; line-height: 35px; width:92%; font-weight: bold;}
+    body.portfolio.item div.holder div.description {padding: 16px 31px 16px 24px;}
+    body.portfolio.item video, body.portfolio.item .video-js .vjs-tech {min-height: inherit;height: 197px;}
+
+
+ /* body.home div#PageWrapper ul.mainMenu li.home {background-color: black;} */
 }
 
 /* iPads (portrait and landscape) ----------- */

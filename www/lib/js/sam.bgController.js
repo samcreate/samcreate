@@ -112,6 +112,7 @@ sam.bgController = function(){
 		
 		if(!_theCanvasTop || !_theCanvasTop.getContext) { debug.log('noCanvas Support'); return;}
 		
+		
 		_canvasOkay = true;
 		
 		_theCanvasTop.width = window.innerWidth;

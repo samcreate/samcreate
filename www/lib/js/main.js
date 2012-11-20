@@ -13,6 +13,11 @@ sam.main = function(){
 	// = public functions                              =
 	// =================================================
 	var self = {
+
+		vars : {
+			isMobile : false,
+			isIpad : false
+		},
 		
 		init : function(){
 			
@@ -29,12 +34,11 @@ sam.main = function(){
 				debug.groupEnd();
 				
 				self.appVARS(window._app_vars);
-
-				_run();
-
+				self.checkMobile();
+				self.checkIpad();
 				_setup_scollMenu();
-
-				_setup_bg();
+				_run();
+				_setup_bg(); //must be after run
 		},
 		queue : function(f){
 			
@@ -57,7 +61,17 @@ sam.main = function(){
 			return new purgatoryCell(p_func,p_options);
 			
 			
-		}
+		},
+		checkMobile: function() {
+			if(navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i) ||navigator.userAgent.match(/BlackBerry/i)){
+				self.vars.isMobile = true;	
+			} 
+		},		
+		checkIpad: function() {
+			if(navigator.userAgent.match(/iPad/i) != null) {
+				self.vars.isIpad = true;
+			}
+		},
 	
 	};
 	
@@ -103,60 +117,42 @@ sam.main = function(){
 		}(this.func, {scope:this._scope,amount:this.amount,time:this.time}));
 	}
 
-
-	function _setup_scollMenu(){
-		var _controller = $.superscrollorama();
-		var scrollDuration = 320;
-		var _$menuClone = $('#mainMenu').clone().attr('id','#mainMenu2');
-		$("#PageWrapper").prepend(_$menuClone);
-		_$menuClone.css({position:"fixed",right:"50%",margin:"0 -487px 0 auto","z-index":4,top:"-65px"});
-		
-
-		 _controller.addTween('#MainContent', TweenMax.fromTo($('.logo'), 0.1, {css:{opacity: 1}, immediateRender:true},{css:{opacity: 0}}),100,250);
-
-		_controller.addTween(
-			'#MainContent',
-			(new TimelineLite())
-			.append(
-			[TweenMax.fromTo($('#mainMenu'), 0.3,
-				{css:{opacity: 1}, immediateRender:true},
-				{css:{opacity: 1}}),
-			TweenMax.fromTo($('html'), 1,
-				{css:{opacity: 1}, immediateRender:true},
-				{css:{opacity: 1},onComplete:function(){
-						_$menuClone.addClass('animatedLogo').css({backgroundImage:"none"});
-						var img = document.createElement('img');
-						img.src = "/media/images/logo2.gif?p" + new Date().getTime();
-
-						/* Once the image has loaded, set it as the background-image */
-						$(img).load(function(){
-							_$menuClone.css({backgroundImage: "url("+img.src+")"});
-						});
-				}, onReverseComplete:function(){
-				}})
-			]
-
-			).append(TweenMax.fromTo(_$menuClone, 0.5,
-				{css:{opacity: 1,top:-100},immediateRender:true},
-				{css:{opacity: 1, top: 0},delay:0.5,
-
-			onReverseComplete:function(){
-				_$menuClone.css({backgroundImage:"none"});
-			},onComplete:function(){
-
-			}})),
-			scrollDuration, 150 // scroll duration of tween
-		);
-	}
-	
 	function _setup_bg () {
-
-		if(sam.bgController.canvasOkay()){
-			
+		if(sam.bgController.canvasOkay() && !self.vars.isMobile){
 			sam.spirals.init(sam.bgController.animationLayer());
 			sam.bgController.queue(sam.spirals.redraw);
 			
 		}
+	}
+
+	function _setup_scollMenu(){
+
+
+		if(self.vars.isIpad || self.vars.isMobile) return;
+
+		var $_menu = $("#mainMenu"),
+		_v_pos,
+		_menuInnerHeight = $("#mainMenu").innerHeight();
+
+
+		$(window).scroll( function(e){
+			
+			_v_pos = ($(window).scrollTop()-$("#mainMenu").offset().top)-_menuInnerHeight;
+
+			if(_v_pos > 0 && $("#mainMenu").offset().top != 200){
+
+				$_menu.css({position:"fixed",right:"50%",margin:"0 -487px 0 auto","z-index":4,top:"-65px"});
+				$_menu.stop().animate({top: 0}, 240).addClass('animatedLogo').css({backgroundImage:"none"}).css({
+						backgroundImage: "url(/media/images/logo2.gif?p"+ new Date().getTime()+")"
+				});
+		
+
+			}else if($("#mainMenu").offset().top <= 119){
+				$_menu.attr("style","");
+			}
+
+		});
+
 	}
 
 

@@ -57,8 +57,10 @@
 	?>
 </head>
 <body class="<?= $class ?>">
+	
 	<div id="PageWrapper">
-		
+		<canvas id="canvas_bottom" width="1024" height="768">Sorry, you don't have an awesome browser?</canvas>
+		<canvas id="canvas_top" width="1024" height="768">Sorry, you don't have an awesome browser?</canvas>
 		<header>
 			
 			<h1 class="logo ir"><a href="#">[ SAMCREATE ]</a> </h1>
