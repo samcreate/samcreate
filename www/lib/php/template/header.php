@@ -73,7 +73,7 @@
 					<p>My Blog</p>
 				</li>
 				<li class="menu portfolio">
-					<a href="/portfolio/index">Portfolio</a>
+					<a href="/work/index">Portfolio</a>
 					<p>My work</p>
 				</li>
 				<li class="menu  tink">

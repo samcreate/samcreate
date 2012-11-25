@@ -47,7 +47,7 @@
 	<script src="/lib/js/sam.bgController.js" type="text/javascript" charset="utf-8"></script>
 	<script src="/lib/js/effects/sam.spirals.js" type="text/javascript" charset="utf-8"></script>
 	<script src="/lib/js/homePage.js" type="text/javascript" charset="utf-8"></script>
-	<script src="/lib/js/portfolio.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/lib/js/work.js" type="text/javascript" charset="utf-8"></script>
 	<!-- END: javascript -->
 	<?	
 	} 

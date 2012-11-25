@@ -4,9 +4,9 @@ Router::add('/', DIR_CTRL.'/index.php');
 Router::add('#^/page/[^/]+$#', DIR_CTRL.'/index.php', Router::ROUTE_PCRE);
 Router::add('#^/post/[^/]+$#', DIR_CTRL.'/index.php', Router::ROUTE_PCRE);
 Router::add('/about/index', DIR_CTRL.'/about.php');
-Router::add('/portfolio/index', DIR_CTRL.'/portfolio_index.php');
-Router::add('/portfolio/item', DIR_CTRL.'/portfolio_item.php');
-Router::add('#^/portfolio/[^/]+$#', DIR_CTRL.'/portfolio_item.php', Router::ROUTE_PCRE);
+Router::add('/work/index', DIR_CTRL.'/work_index.php');
+Router::add('/work/item', DIR_CTRL.'/work_item.php');
+Router::add('#^/work/[^/]+$#', DIR_CTRL.'/work_item.php', Router::ROUTE_PCRE);
 Router::add('#^/regex/(test1|test2|test3)/$#', DIR_CTRL.'/regex.php', Router::ROUTE_PCRE);
 /**
  * Routes are added with the static method Router::add($pattern, $replacement)
