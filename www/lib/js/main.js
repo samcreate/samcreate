@@ -139,7 +139,8 @@ sam.main = function(){
 
 		var $_menu = $("#mainMenu"),
 		_v_pos,
-		_menuInnerHeight = $("#mainMenu").innerHeight();
+		_menuInnerHeight = $("#mainMenu").innerHeight(),
+		$_logo = $("h1.logo");
 
 
 		$(window).scroll( function(e){
@@ -152,10 +153,12 @@ sam.main = function(){
 				$_menu.stop().animate({top: 0}, 240).addClass('animatedLogo').css({backgroundImage:"none"}).css({
 						backgroundImage: "url(/media/images/logo2.gif?p"+ new Date().getTime()+")"
 				});
+				$_logo.hide();
 		
 
 			}else if($("#mainMenu").offset().top <= 119){
 				$_menu.attr("style","");
+				$_logo.show();
 			}
 
 		});
